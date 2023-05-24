@@ -2,13 +2,70 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1024">
   <link href="/public/output.css" rel="stylesheet">
 
 </head>
 <body>
-  <h1 class="text-3xl font-bold bg-blue-100 m-4">
-    Hello world! i am testing new  testingggg
-  </h1>
+  <div class="login-wrapprt h-screen w-full">
+    <div class="login-container m-auto flex h-full justify-center items-center flex-col">
+        <div class="text-center w-full flex justify-center mt-5">
+            <a href="#"><img src="../src/images/nifty-logo.svg" alt="" class="w-28" ></a>
+        </div>
+        <div class="bg-white flex login-content w-full mt-7">
+            <div class="col-left w-2/4 border-r-[1px] border-[#f1f1f1] p-10">
+                <div class="mb-8">
+                    <h2 class="heading-color font-bold mb-2"><span class="label">Coming Soon</span> Reporting Dashboard</h2>
+                    <p>Powerful reporting to keep you on top of your business and workload.
+                     Customize your dashboard to gain insights and make informed decisions.</p>
+                </div>
+                <div class="rounded-md mt-2 relative login-image ">
+                    <img class="rounded-md" src="../src/images/main.png" alt=""  >
+                </div>
+            </div>
+            <div class="col-right w-2/4 p-10">
+                <h1 class="font-bold text-2xl heading-color mb-5">Log in to your account</h1>
+                <div class="mb-5">
+                        <form>
+                            <!-- Email -->
+                            <label class="block mb-5">
+                            <span class="block font-semibold heading-color text-base  after:content-['*'] after:ml-0.5 after:text-red-500">Email Address</span>
+                            
+                            <input type="email" placeholder="name@company.com" class="mt-1 block global-inputFiled w-full px-3 py-2 bg-white placeholder-slate-400"/>
+                            </label>
+                            <!-- password -->
+                            <label class="block mb-5">
+                                <div class="flex justify-between"><span class="block font-semibold heading-color text-base  after:content-['*'] after:ml-0.5 after:text-red-500">Password </span> <a class="text-[#8e94bb]" href="#">Forgot password?</a></div>
+                                <input type="password" placeholder="Password" class="mt-1 block global-inputFiled w-full px-3 py-2 bg-white placeholder-slate-400"/>
+                            </label>
+
+                            <div class="w-full">
+                                <button type="submit" class="w-full btn-success py-2 px-2 rounded-md font-semibold">Log in</button>
+                            </div>
+
+                        </form>
+                    </div>
+                  <div class="google-login-form flex justify-center">
+                        <div class="flex-col flex text-center">
+                            <a href="#" class="flex text-[#f57d2c] mb-3 hover:underline"><svg class="icon mr-2 relative top-1" width="1em" height="1em" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><path id="icon-google-path" d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"></path></defs><clipPath id="icon-google-clippath"><use href="#icon-google-path" overflow="visible"></use></clipPath><path clip-path="url(#icon-google-clippath)" fill="#FBBC05" d="M0 37V11l17 13z"></path><path clip-path="url(#icon-google-clippath)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"></path><path clip-path="url(#icon-google-clippath)" fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"></path><path clip-path="url(#icon-google-clippath)" fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"></path></svg>Sign in with Google</a>
+                            <a href="#" class=" hover:underline">Sign in with SSO</a>
+                        </div>
+                    </div>
+                     <!-- Divider -->
+                    <div class="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
+                        <p class="mx-4 mb-0 text-center divder-text">OR</p>
+                    </div>
+
+                    <div class="flex flex-col text-center">
+                        <p class="mb-3">Don’t have an account?</p>
+                        <button class="btn-secondary py-2 m-auto px-2 rounded-md font-semibold">Sign up for free</button>
+                    </div>
+
+                  
+
+            </div>
+        </div>
+    </div>
+  </div>
 </body>
 </html>
