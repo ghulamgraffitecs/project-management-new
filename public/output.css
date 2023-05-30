@@ -922,4 +922,5 @@ body {
 
 .dropdown:hover .dropdown-menu {
   display: block;
+  z-index: 999;
 }
