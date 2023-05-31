@@ -925,6 +925,7 @@ body {
   height: calc(100vh - 48px);
   position: fixed;
 }
+<<<<<<< Updated upstream
 .screen_pop li a:hover span {
   color: #000;
 }
@@ -937,3 +938,6 @@ body {
 .screen_pop li a:hover span.text-color {
   color: #393939;
 }
+=======
+
+>>>>>>> Stashed changes
