@@ -1,385 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=1024" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Dashboard</title>
-</head>
-<header class=" bg-white flex flex-wrap">
-  <div class=" ">
-  </div>
-
-  <div class="">
-
-
-    <nav class="bg-white dark:bg-white fixed w-full  top-0 left-0 py-2">
-
-      <div
-        class="w-full flex flex-wrap items-center justify-between px-4  border-b border-gray-200 dark:border-gray-600">
-        <div class="flex align-center">
-          <span
-            class="pl-1 pr-1 pt-1 pb-1 ml-3 mt-3 text-white font-medium rounded-lg clickable h-[36px] w-[36px] text-center"
-            style="background-color: rgb(246, 106, 86); cursor: pointer;">DP<span class=""></span></span>
-
-          <div class="flex flex-col ml-3">
-
-
-
-            <div class="flex-col-1">
-              <a class="flex items-center">
-                <span class="self-left text-2xl font-bold whitespace-nowrap dark:text-black ml-2 ">
-                  <span></span>Demo Project</span> <svg class="icon ml-2" width="1.0277777777777777em"
-                  height="0.6111111111111112em" viewBox="0 0 37 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                  <g id="Style-guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="nifty-UI-guide" transform="translate(-617.000000, -2934.000000)" fill="currentColor"
-                      fill-rule="nonzero">
-                      <g id="Group-6-Copy-3" transform="translate(574.000000, 2884.000000)">
-                        <path
-                          d="M70.5909903,46.8409903 C71.4696699,45.9623106 71.4696699,44.5376894 70.5909903,43.6590097 C69.7123106,42.7803301 68.2876894,42.7803301 67.4090097,43.6590097 L51.6590097,59.4090097 C50.7803301,60.2876894 50.7803301,61.7123106 51.6590097,62.5909903 L67.4090097,78.3409903 C68.2876894,79.2196699 69.7123106,79.2196699 70.5909903,78.3409903 C71.4696699,77.4623106 71.4696699,76.0376894 70.5909903,75.1590097 L56.4319805,61 L70.5909903,46.8409903 Z"
-                          id="Path-82"
-                          transform="translate(61.125000, 61.000000) rotate(-90.000000) translate(-61.125000, -61.000000) ">
-                        </path>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-                </span>
-
-              </a>
-            </div>
-            <div class="" id="navbar-sticky">
-              <ul
-                class="flex flex-col mt-2 font-medium border rounded-lg bg-transparent md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 dark:border-gray-700">
-                <li class="mr-3 mt-2">
-                  <a href="#"
-                    class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-3">Dashboard</a>
-
-
-
-                <li class="mr-3 mt-2">
-                  <a href="#"
-                    class="py-4 pr-4 text-black bg-transparent md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
-                    href="#">Roadmap</a>
-                </li>
-                <li class="mr-3 mt-2">
-                  <a href="#"
-                    class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
-                    href="#">Tasks</a>
-                </li>
-                <li class="mr-3 mt-2">
-                  <a href="#"
-                    class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
-                    href="#">Calendar</a>
-                </li>
-                <li class="mr-3 mt-2">
-                  <a href="#"
-                    class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
-                    href="#">Discussions</a>
-                </li>
-                <li class="mr-3 mt-2">
-                  <a href="#"
-                    class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
-                    href="#">Docs</a>
-                </li>
-                <li class="mr-3 mt-2">
-                  <a href="#"
-                    class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
-                    href="#">Files</a>
-                </li>
-                <li class="mr-3 mt-2">
-                  <a href="#"
-                    class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
-                    href="#">Forms</a>
-                </li>
-                <button><svg class="icon mt-2 " width="1em" height="1em" viewBox="0 0 60 60" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M8 22c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zM52 22c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zM30 22c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"
-                      fill="currentColor"></path>
-                  </svg></button>
-              </ul>
-            </div>
-          </div>
-
-
-        </div>
-        <div class="flex">
-          <button type="button"
-            class="mr-2 mb-1 gap-2 flex  text-sm font-medium  focus:outline-none  rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-black block py-2 pl-2 pr-2 text-black  md:dark:hover:text-[#00a99b]">
-            <span class="relative top-[3px]"><svg class="icon " height="1em" viewBox="0 0 13 16" version="1.1"
-                xmlns="http://www.w3.org/2000/svg">
-                <g id="Tasks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="Tasks-kanban-change-default" transform="translate(-954.000000, -24.000000)" fill="currentColor"
-                    fill-rule="nonzero">
-                    <g id="Group-17-Copy" transform="translate(940.000000, 11.000000)">
-                      <path
-                        d="M20.8765772,15.8579411 L16.538339,20.911236 L18.6585721,20.911236 C19.0647197,20.911236 19.3938209,21.2423744 19.3936417,21.6474687 L19.3920603,25.2224918 L23.7361156,20.1739164 L21.6070614,20.1739164 C21.1992241,20.1739164 20.8692188,19.8424156 20.8699677,19.4368778 L20.8765772,15.8579411 Z M22.3432458,18.6992772 L25.4631368,18.6992772 C26.2771848,18.6992772 26.5082218,19.1985848 25.976314,19.8178398 L19.3606894,27.5198476 C18.5646476,28.4466112 17.9193282,28.2102165 17.9193282,26.9842419 L17.9193282,22.3858752 L14.7994372,22.3858752 C13.9853892,22.3858752 13.7543522,21.8865676 14.28626,21.2673127 L20.9018846,13.5653049 C21.6979264,12.6385413 22.3432458,12.874936 22.3432458,14.1009106 L22.3432458,18.6992772 Z"
-                        id="Combined-Shape"></path>
-                    </g>
-                  </g>
-                </g>
-              </svg></span> Alternative</button>
-          <button type="button"
-            class="mr-2 mb-1 gap-2 flex  text-sm font-medium text-black focus:outline-none  rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-black block py-2 pl-2 pr-2 text-black bg-white bg-[#313345] md:dark:hover:text-[#00a99b]">
-
-            <span class="relative top-[3px]"><svg class="icon" height="0.9em" viewBox="0 0 16 12" version="1.1"
-                xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M6.66667 0.666569C6.66667 0.296631 6.36819 0 6 0C5.62924 0 5.33333 0.298433 5.33333 0.666569V5.33333H0.666569C0.296631 5.33333 0 5.63181 0 6C0 6.37076 0.298433 6.66667 0.666569 6.66667H5.33333V11.3334C5.33333 11.7034 5.63181 12 6 12C6.37076 12 6.66667 11.7016 6.66667 11.3334V6.66667H11.3334C11.7034 6.66667 12 6.36819 12 6C12 5.62924 11.7016 5.33333 11.3334 5.33333H6.66667V0.666569Z"
-                  fill="currentColor"></path>
-              </svg></span> Add Widgets</span>
-          </button>
-          <button
-            class=" mb-1 gap-2 flex  text-sm font-medium text-black focus:outline-none  rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-black block py-2   bg-white bg-[#313345] md:dark:hover:text-[#00a99b]"><svg
-              class="icon " width="40px" height="18px" viewBox="0 0 36 36" version="1.1"
-              xmlns="http://www.w3.org/2000/svg">
-              <path fill="currentColor"
-                d="M36.042 13.909a1.006 1.006 0 0 0-.85-.688l-11.549-1.172L18.96 1.43a1 1 0 0 0-1.83.002L12.446 12.05.899 13.221a1.003 1.003 0 0 0-.565 1.743l8.652 7.738-2.453 11.343a1 1 0 0 0 1.481 1.074l10.032-5.84 10.03 5.84a.997.997 0 0 0 1.091-.059 1 1 0 0 0 .391-1.02l-2.453-11.344 8.653-7.737a.992.992 0 0 0 .284-1.05zm-10.706 7.689a1 1 0 0 0-.311.957l2.097 9.695-8.574-4.99a.995.995 0 0 0-1.006 0l-8.576 4.99 2.097-9.695a1 1 0 0 0-.311-.957l-7.396-6.613 9.87-1.002c.358-.035.668-.264.814-.592l4.004-9.077 4.003 9.077c.146.328.456.557.814.592l9.87 1.002-7.395 6.613z">
-              </path>
-            </svg></button>
-        </div>
-
-      </div>
-    </nav>
-  </div>
-
-</header>
-
-<body class=" bg-[#FAFBFD]">
-  <div class="flex w-full ">
-    <div class=" rounded-lg mx-auto my-16 p-16">
-      <h1 class="text-2xl font-medium mb-2 ml-2">Project Outline</h1>
-      <p
-        class="block  p-6 mr-20 bg-white  rounded-lg shadow hover:bg-gray-100 dark:bg-white dark:border-gray-700 dark:hover:white">
-        Welcome everyone! 👋 This is how we’ll collaborate together in Nifty.
-        We can add project brief, resource links, and other important information here. 🚀</p>
-
-      <h1 class="text-2xl font-medium mb-8 ml-2 mt-7">Project Members</h1>
-
-
-      <div class="ml-2 flex gap-2 user-preview-main">
-        <div class=""><span class=" p-6 rounded-xl hover:bg-[#00a99b]">+</span></div>
-        <div class="user-preview-body">
-          <div class="user-preview-name bg-transparent md:dark:hover:text-[#00a99b]"><span>Add member</span></div>
-        </div>
-        <div class="ml-8 gap-4 user-preview-main flex">
-          <div class="user-preview-side"><span class="clickable p-4 border rounded-lg"
-              style="background-color: rgb(255, 193, 7);">MI<span class="status-indicator active"></span></span></div>
-          <div class="user-preview-body">
-            <div class="user-preview-name"><span>Muhammad Ibrahim</span></div>
-            <div class="user-preview-meta">
-              <div class="user-preview-role">Owner</div>
-            </div>
-            <div class="labels-holder  flex"></div><span class="overlay-placeholder"></span>
-          </div>
-        </div>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=1024" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dashboard</title>
+  </head>
+  <header class=" bg-white flex flex-wrap">
+    <div class=" ">
     </div>
-    <!-- chat box -->
-    <div
-      class="  p-16 ml-3 mr-4 mt-24 rounded-lg  border-gray-200  block py-2 pl-4 pr-2 text-black bg-[#FAFBFD] h-[300px] overflow-y-auto">
-      <div class="project-activity nice-scroll ">
-        <div><a class="activity-item flex" href="/LhWnhB0rBXKD9/task/ozcg9uwyng4hFz">
-            <div
-              class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px]  activity-item-side relative top-[8px] pr-2 ">
-              <div class="activity-item-icon"><span
-                  class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6  "><svg
-                    class="icon" width="0.75em" height="0.5833333333333334em" viewBox="0 0 9 7" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M2.822 6.178a.857.857 0 0 0 1.213 0l4.714-4.715A.857.857 0 1 0 7.537.251l-4.108 4.12-1.966-1.977A.857.857 0 0 0 .251 3.606l2.571 2.572z"
-                      fill="currentColor" fill-rule="evenodd"></path>
-                  </svg></span></div>
-            </div>
-            <div class="activity-item-main hover:text-[#00a99b]">
-              <div class="activity-item-body "><strong>Muhammad Ibrahim</strong> completed task <strong>View Help Guides
-                  in Docs</strong></div>
-              <div class="activity-item-foot"><time>May 29, 2023 at 8:09PM</time></div>
-              <div class="activity-item-additional"></div>
-            </div>
-          </a><a class="activity-item flex" href="/LhWnhB0rBXKD9/roadmap">
-            <div
-              class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px]  activity-item-side  relative top-[8px] pr-2">
-              <div class="activity-item-icon"><span
-                  class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6 "><svg
-                    class="icon " width="1em" height="0.8125em" viewBox="0 0 16 13" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
-                      fill="currentColor" fill-rule="evenodd"></path>
-                  </svg></span></div>
-            </div>
-            <div class="activity-item-main">
-              <div class="activity-item-body hover:text-[#00a99b]"><strong>Exploring Nifty</strong><strong>Getting
-                  Started</strong> Milestone Completed</div>
-              <div class="activity-item-foot"><time>May 29, 2023 at 8:09PM</time></div>
-              <div class="activity-item-additional"></div>
-            </div>
-          </a><a class="activity-item flex" href="/LhWnhB0rBXKD9/task/EPONk0RfTVS9LK">
-            <div
-              class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px]  activity-item-side  relative top-[8px] pr-2">
-              <div class="activity-item-icon"><span
-                  class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6 "><svg
-                    class="icon " width="0.75em" height="0.5833333333333334em" viewBox="0 0 9 7" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M2.822 6.178a.857.857 0 0 0 1.213 0l4.714-4.715A.857.857 0 1 0 7.537.251l-4.108 4.12-1.966-1.977A.857.857 0 0 0 .251 3.606l2.571 2.572z"
-                      fill="currentColor" fill-rule="evenodd"></path>
-                  </svg></span></div>
-            </div>
-            <div class="activity-item-main">
-              <div class="activity-item-body hover:text-[#00a99b]"><strong>Muhammad Ibrahim</strong> Completed task
-                <strong>Create a New
-                  Project</strong>
-              </div>
-              <div class="activity-item-foot"><time>May 29, 2023 at 8:09PM</time></div>
-              <div class="activity-item-additional"></div>
-            </div>
-          </a><a class="activity-item flex" href="/LhWnhB0rBXKD9/roadmap">
-            <div
-              class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px]  activity-item-side relative top-[8px] pr-2">
-              <div class="activity-item-icon"><span
-                  class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6"><svg
-                    class="icon " width="1em" height="0.8125em" viewBox="0 0 16 13" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
-                      fill="currentColor" fill-rule="evenodd"></path>
-                  </svg></span></div>
-            </div>
-            <div class="activity-item-main">
-              <div class="activity-item-body hover:text-[#00a99b]"><strong>Muhammad Ibrahim</strong> created milestone
-                <strong>Getting
-                  Started</strong>
-              </div>
-              <div class="activity-item-foot"><time>May 29, 2023 at 5:11PM</time></div>
-              <div class="activity-item-additional"></div>
-            </div>
-          </a><a class="activity-item flex" href="/LhWnhB0rBXKD9/roadmap">
-            <div
-              class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px]  activity-item-side  relative top-[8px] pr-2">
-              <div class="activity-item-icon"><span
-                  class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6 "><svg
-                    class="icon " width="1em" height="0.8125em" viewBox="0 0 16 13" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
-                      fill="currentColor" fill-rule="evenodd"></path>
-                  </svg></span></div>
-            </div>
-            <div class="activity-item-main">
-              <div class="activity-item-body hover:text-[#00a99b]"><strong>Muhammad Ibrahim</strong> created milestone
-                <strong>Onboarding</strong>
-              </div>
-              <div class="activity-item-foot"><time>May 29, 2023 at 5:11PM</time></div>
-              <div class="activity-item-additional"></div>
-            </div>
-          </a><a class="activity-item flex" href="/LhWnhB0rBXKD9/roadmap">
-            <div
-              class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px] activity-item-side  relative top-[8px] pr-2">
-              <div class="activity-item-icon"><span
-                  class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6 "><svg
-                    class="icon " width="1em" height="0.8125em" viewBox="0 0 16 13" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
-                      fill="currentColor" fill-rule="evenodd"></path>
-                  </svg></span></div>
-            </div>
-            <div class="activity-item-main">
-              <div class="activity-item-body hover:text-[#00a99b]"><strong>Muhammad Ibrahim</strong>Created Milestone
-                <strong>Exploring
-                  Nifty</strong>
-              </div>
-              <div class="activity-item-foot"><time>May 29, 2023 at 5:11PM</time></div>
-              <div class="activity-item-additional"></div>
-            </div>
-          </a>
-          <div class="activity-item">
-            <div class="activity-item-side">
-              <div class="activity-item-icon"><span
-                  class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6"><svg
-                    class="icon " width="1em" height="1em" viewBox="0 0 10 10" version="1.1"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <g id="Team-overview---search" transform="translate(-195.000000, -181.000000)"
-                        fill="currentColor">
-                        <g id="Group-2" transform="translate(121.000000, 153.000000)">
+
+    <div class="">
+
+
+      <nav class="bg-white dark:bg-white fixed w-full  top-0 left-0 py-2">
+
+        <div
+          class="w-full flex flex-wrap items-center justify-between px-4  border-b border-gray-200 dark:border-gray-600">
+          <div class="flex align-center">
+            <span
+              class="pl-1 pr-1 pt-1 pb-1 ml-3 mt-3 text-white font-medium rounded-lg clickable h-[36px] w-[36px] text-center"
+              style="background-color: rgb(246, 106, 86); cursor: pointer;">DP<span class=""></span></span>
+
+            <div class="flex flex-col ml-3">
+
+
+
+              <div class="flex-col-1">
+                <a class="flex items-center">
+                  <span class="self-left text-2xl font-bold whitespace-nowrap dark:text-black ml-2 ">
+                    <span></span>Demo Project</span> <svg class="icon ml-2" width="1.0277777777777777em"
+                    height="0.6111111111111112em" viewBox="0 0 37 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Style-guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="nifty-UI-guide" transform="translate(-617.000000, -2934.000000)" fill="currentColor"
+                        fill-rule="nonzero">
+                        <g id="Group-6-Copy-3" transform="translate(574.000000, 2884.000000)">
                           <path
-                            d="M75,35.4952421 L75,36.17338 C75.1749893,36.2801701 76.5730894,36.9985151 78.9999999,36.9985149 C81.4269104,36.9985146 82.8251939,36.2809335 83,36.1742018 L83,35.4952421 C83,34.6371765 81.0964783,33.9698598 80.9607895,33.9187773 C80.5350099,34.6829256 79.905538,35.2499999 79,35.25 C78.0949419,35.2500001 77.4656574,34.6835268 77.0398876,33.9199923 C76.9055757,33.9704691 75,34.635437 75,35.4952421 Z M76.25,30.5893243 C76.25,29.15928 77.4812169,28 79,28 C80.5187831,28 81.75,29.15928 81.75,30.5893243 C81.75,31.1961664 81.6440039,32.1272483 81.3568094,32.9981097 C82.3582639,33.3806945 84,34.0003662 84,35.4952421 L84,36.4988173 C84,37.0513451 81.8424683,37.9999997 79,38 C76.1575317,38.0000003 74,37.0494601 74,36.4988173 L74,35.4952421 C74,33.9952087 75.642655,33.3812319 76.6436151,32.9993966 C76.3561006,32.1281657 76.25,31.1964653 76.25,30.5893243 Z M78.9999998,34.25 C79.9847893,34.2499998 80.75,32.4413168 80.75,30.5893243 C80.75,29.7254728 79.9795093,29 79,29 C78.0204907,29 77.25,29.7254728 77.25,30.5893243 C77.25,32.4413169 78.0152107,34.2500002 78.9999998,34.25 Z"
-                            id="Combined-Shape"></path>
+                            d="M70.5909903,46.8409903 C71.4696699,45.9623106 71.4696699,44.5376894 70.5909903,43.6590097 C69.7123106,42.7803301 68.2876894,42.7803301 67.4090097,43.6590097 L51.6590097,59.4090097 C50.7803301,60.2876894 50.7803301,61.7123106 51.6590097,62.5909903 L67.4090097,78.3409903 C68.2876894,79.2196699 69.7123106,79.2196699 70.5909903,78.3409903 C71.4696699,77.4623106 71.4696699,76.0376894 70.5909903,75.1590097 L56.4319805,61 L70.5909903,46.8409903 Z"
+                            id="Path-82"
+                            transform="translate(61.125000, 61.000000) rotate(-90.000000) translate(-61.125000, -61.000000) ">
+                          </path>
                         </g>
                       </g>
                     </g>
-                  </svg></span></div>
-            </div>
-            <div class="activity-item-main">
-              <div class="activity-item-body hover:text-[#00a99b]"><strong>Muhammad Ibrahim</strong> created milestone
-                <strong>Exploring
-                  Nifty</strong>
+                  </svg>
+                  </span>
+
+                </a>
               </div>
-              <div class="activity-item-foot"><time>May 29, 2023 at 5:11PM</time></div>
-              <div class="activity-item-additional"></div>
+              <div class="" id="navbar-sticky">
+                <ul
+                  class="flex flex-col mt-2 font-medium border rounded-lg bg-transparent md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 dark:border-gray-700">
+                  <li class="mr-3 mt-2">
+                    <a href="#"
+                      class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-3">Dashboard</a>
+
+
+
+                  <li class="mr-3 mt-2">
+                    <a href="#"
+                      class="py-4 pr-4 text-black bg-transparent md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
+                      href="#">Roadmap</a>
+                  </li>
+                  <li class="mr-3 mt-2">
+                    <a href="#"
+                      class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
+                      href="#">Tasks</a>
+                  </li>
+                  <li class="mr-3 mt-2">
+                    <a href="#"
+                      class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
+                      href="#">Calendar</a>
+                  </li>
+                  <li class="mr-3 mt-2">
+                    <a href="#"
+                      class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
+                      href="#">Discussions</a>
+                  </li>
+                  <li class="mr-3 mt-2">
+                    <a href="#"
+                      class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
+                      href="#">Docs</a>
+                  </li>
+                  <li class="mr-3 mt-2">
+                    <a href="#"
+                      class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
+                      href="#">Files</a>
+                  </li>
+                  <li class="mr-3 mt-2">
+                    <a href="#"
+                      class="py-4 pr-4 text-black bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
+                      href="#">Forms</a>
+                  </li>
+                  <button><svg class="icon mt-2 " width="1em" height="1em" viewBox="0 0 60 60" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8 22c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zM52 22c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zM30 22c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z"
+                        fill="currentColor"></path>
+                    </svg></button>
+                </ul>
+              </div>
             </div>
-            </a>
+
+
           </div>
-          <div class="activity-item  relative top-[8px] pr-2">
-            <div class=" ">
-              <div class="activity-item-icon"><svg class="icon " width="1em" height="1em" viewBox="0 0 11 11"
-                  version="1.1" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.195 6.438c.078 0 .149.027.211.082a.255.255 0 0 1 .094.199v4.289c0 .203-.11.375-.328.515v.024L6.07 13.703v.024a.326.326 0 0 1-.14.023.312.312 0 0 1-.211-.082.255.255 0 0 1-.094-.2V9.134c0-.219.102-.39.305-.516L6 8.57l4.031-2.086.047-.023a.26.26 0 0 1 .117-.024zm-.304-1.149c.125.047.187.117.187.211a.252.252 0 0 1-.047.14.265.265 0 0 1-.094.094l-.046.024L5.6 8.03l-.046.024a.672.672 0 0 1-.305.07.672.672 0 0 1-.305-.07l-.047-.024L.61 5.781C.484 5.703.422 5.61.422 5.5c0-.047.015-.086.047-.117a.367.367 0 0 1 .094-.07l.046-.024 4.243-1.922c.171-.078.304-.117.398-.117l.398.117L9.891 5.29zM4.57 8.617c.202.125.304.297.304.516v4.336a.255.255 0 0 1-.094.199.312.312 0 0 1-.21.082.36.36 0 0 1-.141-.047L.328 11.547v-.024C.11 11.383 0 11.211 0 11.008v-4.29c0-.077.031-.144.094-.198a.312.312 0 0 1 .21-.082c.063 0 .102.007.118.023l.047.023L4.477 8.57l.093.047z"
-                    id="a" transform="translate(0 -3)" fill="currentColor" fill-rule="evenodd"></path>
-                </svg></div>
-            </div>
-            <div class="activity-item-main">
-              <div class=" activity-item-body hover:text-[#00a99b]"><strong>Project Created</strong></div>
-              <div class="activity-item-foot"><time>May 29, 2023 at 5:11PM</time></div>
-              <div class="activity-item-additional"></div>
-            </div>
+          <div class="flex">
+            <button type="button"
+              class="mr-2 mb-1 gap-2 flex  text-sm font-medium  focus:outline-none  rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-black block py-2 pl-2 pr-2 text-black  md:dark:hover:text-[#00a99b]">
+              <span class="relative top-[3px]"><svg class="icon " height="1em" viewBox="0 0 13 16" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="Tasks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Tasks-kanban-change-default" transform="translate(-954.000000, -24.000000)"
+                      fill="currentColor" fill-rule="nonzero">
+                      <g id="Group-17-Copy" transform="translate(940.000000, 11.000000)">
+                        <path
+                          d="M20.8765772,15.8579411 L16.538339,20.911236 L18.6585721,20.911236 C19.0647197,20.911236 19.3938209,21.2423744 19.3936417,21.6474687 L19.3920603,25.2224918 L23.7361156,20.1739164 L21.6070614,20.1739164 C21.1992241,20.1739164 20.8692188,19.8424156 20.8699677,19.4368778 L20.8765772,15.8579411 Z M22.3432458,18.6992772 L25.4631368,18.6992772 C26.2771848,18.6992772 26.5082218,19.1985848 25.976314,19.8178398 L19.3606894,27.5198476 C18.5646476,28.4466112 17.9193282,28.2102165 17.9193282,26.9842419 L17.9193282,22.3858752 L14.7994372,22.3858752 C13.9853892,22.3858752 13.7543522,21.8865676 14.28626,21.2673127 L20.9018846,13.5653049 C21.6979264,12.6385413 22.3432458,12.874936 22.3432458,14.1009106 L22.3432458,18.6992772 Z"
+                          id="Combined-Shape"></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg></span> Alternative</button>
+            <button type="button"
+              class="mr-2 mb-1 gap-2 flex  text-sm font-medium text-black focus:outline-none  rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-black block py-2 pl-2 pr-2 text-black bg-white bg-[#313345] md:dark:hover:text-[#00a99b]">
+
+              <span class="relative top-[3px]"><svg class="icon" height="0.9em" viewBox="0 0 16 12" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M6.66667 0.666569C6.66667 0.296631 6.36819 0 6 0C5.62924 0 5.33333 0.298433 5.33333 0.666569V5.33333H0.666569C0.296631 5.33333 0 5.63181 0 6C0 6.37076 0.298433 6.66667 0.666569 6.66667H5.33333V11.3334C5.33333 11.7034 5.63181 12 6 12C6.37076 12 6.66667 11.7016 6.66667 11.3334V6.66667H11.3334C11.7034 6.66667 12 6.36819 12 6C12 5.62924 11.7016 5.33333 11.3334 5.33333H6.66667V0.666569Z"
+                    fill="currentColor"></path>
+                </svg></span> Add Widgets</span>
+            </button>
+            <button
+              class=" mb-1 gap-2 flex  text-sm font-medium text-black focus:outline-none  rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-black block py-2   bg-white bg-[#313345] md:dark:hover:text-[#00a99b]"><svg
+                class="icon " width="40px" height="18px" viewBox="0 0 36 36" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill="currentColor"
+                  d="M36.042 13.909a1.006 1.006 0 0 0-.85-.688l-11.549-1.172L18.96 1.43a1 1 0 0 0-1.83.002L12.446 12.05.899 13.221a1.003 1.003 0 0 0-.565 1.743l8.652 7.738-2.453 11.343a1 1 0 0 0 1.481 1.074l10.032-5.84 10.03 5.84a.997.997 0 0 0 1.091-.059 1 1 0 0 0 .391-1.02l-2.453-11.344 8.653-7.737a.992.992 0 0 0 .284-1.05zm-10.706 7.689a1 1 0 0 0-.311.957l2.097 9.695-8.574-4.99a.995.995 0 0 0-1.006 0l-8.576 4.99 2.097-9.695a1 1 0 0 0-.311-.957l-7.396-6.613 9.87-1.002c.358-.035.668-.264.814-.592l4.004-9.077 4.003 9.077c.146.328.456.557.814.592l9.87 1.002-7.395 6.613z">
+                </path>
+              </svg></button>
           </div>
+
         </div>
-      </div>
+      </nav>
     </div>
 
-  </div>
-  </div>
-  <div class="grid grid-cols-2  w-full  gap-8 mt-8 mb-3 h-[300px] overflow-x-auto">
+  </header>
 
-    <a href="#" class="block  p-6 ml-3  bg-white border border-gray-200 rounded-lg shadow h-full ">
-      <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Milestones <span
-          class="text-zinc-500">></span></h6>
-      <p class="font-normal text-gray-700 dark:text-gray-400">
+  <body class=" bg-[#FAFBFD]">
+    <div class="flex w-full ">
+      <div class=" rounded-lg mx-auto my-16 p-16">
         <h1 class="text-2xl font-medium mb-2 ml-2">Project Outline</h1>
         <p
           class="block  p-6 mr-20 bg-white  rounded-lg shadow hover:bg-gray-100 dark:bg-white dark:border-gray-700 dark:hover:white">
           Welcome everyone! 👋 This is how we’ll collaborate together in Nifty.
           We can add project brief, resource links, and other important information here. 🚀</p>
-        <p
-          class="block  p-6 mr-20 bg-white  rounded-lg shadow hover:bg-gray-100 dark:bg-white dark:border-gray-700 dark:hover:white">
-          Welcome everyone! 👋 This is how we’ll collaborate together in Nifty.
-          We can add project brief, resource links, and other important information here. 🚀</p>
-        <p
-          class="block  p-6 mr-20 bg-white  rounded-lg shadow hover:bg-gray-100 dark:bg-white dark:border-gray-700 dark:hover:white">
-          Welcome everyone! 👋 This is how we’ll collaborate together in Nifty.
-          We can add project brief, resource links, and other important information here. 🚀</p>
-        <p
-          class="block  p-6 mr-20 bg-white  rounded-lg shadow hover:bg-gray-100 dark:bg-white dark:border-gray-700 dark:hover:white">
-          Welcome everyone! 👋 This is how we’ll collaborate together in Nifty.
-          We can add project brief, resource links, and other important information here. 🚀</p>
-    </a>
+
+        <h1 class="text-2xl font-medium mb-8 ml-2 mt-7">Project Members</h1>
+
+
+        <div class="ml-2 flex gap-2 user-preview-main">
+          <div class=""><span class=" p-6 rounded-xl hover:bg-[#00a99b]">+</span></div>
+          <div class="user-preview-body">
+            <div class="user-preview-name bg-transparent md:dark:hover:text-[#00a99b]"><span>Add member</span></div>
+          </div>
+          <div class="ml-8 gap-4 user-preview-main flex">
+            <div class="user-preview-side"><span class="clickable p-4 border rounded-lg"
+                style="background-color: rgb(255, 193, 7);">MI<span class="status-indicator active"></span></span></div>
+            <div class="user-preview-body">
+              <div class="user-preview-name"><span>Muhammad Ibrahim</span></div>
+              <div class="user-preview-meta">
+                <div class="user-preview-role">Owner</div>
+              </div>
+              <div class="labels-holder  flex"></div><span class="overlay-placeholder"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- chat box -->
+      <div
+        class="  p-16 ml-3 mr-4 mt-24 rounded-lg  border-gray-200  block py-2 pl-4 pr-2 text-black bg-[#FAFBFD] h-[300px] overflow-y-auto">
+        <div class="project-activity nice-scroll ">
+          <div><a class="activity-item flex" href="/LhWnhB0rBXKD9/task/ozcg9uwyng4hFz">
+              <div
+                class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px]  activity-item-side relative top-[8px] pr-2 ">
+                <div class="activity-item-icon"><span
+                    class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6  "><svg
+                      class="icon" width="0.75em" height="0.5833333333333334em" viewBox="0 0 9 7" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.822 6.178a.857.857 0 0 0 1.213 0l4.714-4.715A.857.857 0 1 0 7.537.251l-4.108 4.12-1.966-1.977A.857.857 0 0 0 .251 3.606l2.571 2.572z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                    </svg></span></div>
+              </div>
+              <div class="activity-item-main hover:text-[#00a99b]">
+                <div class="activity-item-body "><strong>Muhammad Ibrahim</strong> completed task <strong>View Help
+                    Guides
+                    in Docs</strong></div>
+                <div class="activity-item-foot"><time>May 29, 2023 at 8:09PM</time></div>
+                <div class="activity-item-additional"></div>
+              </div>
+            </a><a class="activity-item flex" href="/LhWnhB0rBXKD9/roadmap">
+              <div
+                class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px]  activity-item-side  relative top-[8px] pr-2">
+                <div class="activity-item-icon"><span
+                    class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6 "><svg
+                      class="icon " width="1em" height="0.8125em" viewBox="0 0 16 13" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                    </svg></span></div>
+              </div>
+              <div class="activity-item-main">
+                <div class="activity-item-body hover:text-[#00a99b]"><strong>Exploring Nifty</strong><strong>Getting
+                    Started</strong> Milestone Completed</div>
+                <div class="activity-item-foot"><time>May 29, 2023 at 8:09PM</time></div>
+                <div class="activity-item-additional"></div>
+              </div>
+            </a><a class="activity-item flex" href="/LhWnhB0rBXKD9/task/EPONk0RfTVS9LK">
+              <div
+                class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px]  activity-item-side  relative top-[8px] pr-2">
+                <div class="activity-item-icon"><span
+                    class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6 "><svg
+                      class="icon " width="0.75em" height="0.5833333333333334em" viewBox="0 0 9 7" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M2.822 6.178a.857.857 0 0 0 1.213 0l4.714-4.715A.857.857 0 1 0 7.537.251l-4.108 4.12-1.966-1.977A.857.857 0 0 0 .251 3.606l2.571 2.572z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                    </svg></span></div>
+              </div>
+              <div class="activity-item-main">
+                <div class="activity-item-body hover:text-[#00a99b]"><strong>Muhammad Ibrahim</strong> Completed task
+                  <strong>Create a New
+                    Project</strong>
+                </div>
+                <div class="activity-item-foot"><time>May 29, 2023 at 8:09PM</time></div>
+                <div class="activity-item-additional"></div>
+              </div>
+            </a><a class="activity-item flex" href="/LhWnhB0rBXKD9/roadmap">
+              <div
+                class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px]  activity-item-side relative top-[8px] pr-2">
+                <div class="activity-item-icon"><span
+                    class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6"><svg
+                      class="icon " width="1em" height="0.8125em" viewBox="0 0 16 13" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                    </svg></span></div>
+              </div>
+              <div class="activity-item-main">
+                <div class="activity-item-body hover:text-[#00a99b]"><strong>Muhammad Ibrahim</strong> created milestone
+                  <strong>Getting
+                    Started</strong>
+                </div>
+                <div class="activity-item-foot"><time>May 29, 2023 at 5:11PM</time></div>
+                <div class="activity-item-additional"></div>
+              </div>
+            </a><a class="activity-item flex" href="/LhWnhB0rBXKD9/roadmap">
+              <div
+                class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px]  activity-item-side  relative top-[8px] pr-2">
+                <div class="activity-item-icon"><span
+                    class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6 "><svg
+                      class="icon " width="1em" height="0.8125em" viewBox="0 0 16 13" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                    </svg></span></div>
+              </div>
+              <div class="activity-item-main">
+                <div class="activity-item-body hover:text-[#00a99b]"><strong>Muhammad Ibrahim</strong> created milestone
+                  <strong>Onboarding</strong>
+                </div>
+                <div class="activity-item-foot"><time>May 29, 2023 at 5:11PM</time></div>
+                <div class="activity-item-additional"></div>
+              </div>
+            </a><a class="activity-item flex" href="/LhWnhB0rBXKD9/roadmap">
+              <div
+                class="after:content-['..........'] after:absolute after:top-2 after:h-full after:rotate-90 after:left-[-25px] activity-item-side  relative top-[8px] pr-2">
+                <div class="activity-item-icon"><span
+                    class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6 "><svg
+                      class="icon " width="1em" height="0.8125em" viewBox="0 0 16 13" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
+                        fill="currentColor" fill-rule="evenodd"></path>
+                    </svg></span></div>
+              </div>
+              <div class="activity-item-main">
+                <div class="activity-item-body hover:text-[#00a99b]"><strong>Muhammad Ibrahim</strong>Created Milestone
+                  <strong>Exploring
+                    Nifty</strong>
+                </div>
+                <div class="activity-item-foot"><time>May 29, 2023 at 5:11PM</time></div>
+                <div class="activity-item-additional"></div>
+              </div>
+            </a>
+            <div class="activity-item">
+              <div class="activity-item-side">
+                <div class="activity-item-icon"><span
+                    class="flex items-center justify-center bg-[#fff] border-[1px] rounded-full shadow-lg w-6 h-6"><svg
+                      class="icon " width="1em" height="1em" viewBox="0 0 10 10" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Team-overview---search" transform="translate(-195.000000, -181.000000)"
+                          fill="currentColor">
+                          <g id="Group-2" transform="translate(121.000000, 153.000000)">
+                            <path
+                              d="M75,35.4952421 L75,36.17338 C75.1749893,36.2801701 76.5730894,36.9985151 78.9999999,36.9985149 C81.4269104,36.9985146 82.8251939,36.2809335 83,36.1742018 L83,35.4952421 C83,34.6371765 81.0964783,33.9698598 80.9607895,33.9187773 C80.5350099,34.6829256 79.905538,35.2499999 79,35.25 C78.0949419,35.2500001 77.4656574,34.6835268 77.0398876,33.9199923 C76.9055757,33.9704691 75,34.635437 75,35.4952421 Z M76.25,30.5893243 C76.25,29.15928 77.4812169,28 79,28 C80.5187831,28 81.75,29.15928 81.75,30.5893243 C81.75,31.1961664 81.6440039,32.1272483 81.3568094,32.9981097 C82.3582639,33.3806945 84,34.0003662 84,35.4952421 L84,36.4988173 C84,37.0513451 81.8424683,37.9999997 79,38 C76.1575317,38.0000003 74,37.0494601 74,36.4988173 L74,35.4952421 C74,33.9952087 75.642655,33.3812319 76.6436151,32.9993966 C76.3561006,32.1281657 76.25,31.1964653 76.25,30.5893243 Z M78.9999998,34.25 C79.9847893,34.2499998 80.75,32.4413168 80.75,30.5893243 C80.75,29.7254728 79.9795093,29 79,29 C78.0204907,29 77.25,29.7254728 77.25,30.5893243 C77.25,32.4413169 78.0152107,34.2500002 78.9999998,34.25 Z"
+                              id="Combined-Shape"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg></span></div>
+              </div>
+              <div class="activity-item-main">
+                <div class="activity-item-body hover:text-[#00a99b]"><strong>Muhammad Ibrahim</strong> created milestone
+                  <strong>Exploring
+                    Nifty</strong>
+                </div>
+                <div class="activity-item-foot"><time>May 29, 2023 at 5:11PM</time></div>
+                <div class="activity-item-additional"></div>
+              </div>
+              </a>
+            </div>
+            <div class="activity-item  relative top-[8px] pr-2">
+              <div class=" ">
+                <div class="activity-item-icon"><svg class="icon " width="1em" height="1em" viewBox="0 0 11 11"
+                    version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10.195 6.438c.078 0 .149.027.211.082a.255.255 0 0 1 .094.199v4.289c0 .203-.11.375-.328.515v.024L6.07 13.703v.024a.326.326 0 0 1-.14.023.312.312 0 0 1-.211-.082.255.255 0 0 1-.094-.2V9.134c0-.219.102-.39.305-.516L6 8.57l4.031-2.086.047-.023a.26.26 0 0 1 .117-.024zm-.304-1.149c.125.047.187.117.187.211a.252.252 0 0 1-.047.14.265.265 0 0 1-.094.094l-.046.024L5.6 8.03l-.046.024a.672.672 0 0 1-.305.07.672.672 0 0 1-.305-.07l-.047-.024L.61 5.781C.484 5.703.422 5.61.422 5.5c0-.047.015-.086.047-.117a.367.367 0 0 1 .094-.07l.046-.024 4.243-1.922c.171-.078.304-.117.398-.117l.398.117L9.891 5.29zM4.57 8.617c.202.125.304.297.304.516v4.336a.255.255 0 0 1-.094.199.312.312 0 0 1-.21.082.36.36 0 0 1-.141-.047L.328 11.547v-.024C.11 11.383 0 11.211 0 11.008v-4.29c0-.077.031-.144.094-.198a.312.312 0 0 1 .21-.082c.063 0 .102.007.118.023l.047.023L4.477 8.57l.093.047z"
+                      id="a" transform="translate(0 -3)" fill="currentColor" fill-rule="evenodd"></path>
+                  </svg></div>
+              </div>
+              <div class="activity-item-main">
+                <div class=" activity-item-body hover:text-[#00a99b]"><strong>Project Created</strong></div>
+                <div class="activity-item-foot"><time>May 29, 2023 at 5:11PM</time></div>
+                <div class="activity-item-additional"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <div class="grid grid-cols-2  w-full  gap-8 mt-8 mb-3 h-[300px] overflow-x-auto">
+
+      <a href="#" class="block  p-6 ml-3  bg-white border border-gray-200 rounded-lg shadow h-full ">
+        <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-black">Milestones <span
+            class="text-zinc-500">></span></h6>
+        <p class="font-normal text-gray-700 dark:text-gray-400">
+          <h1 class="text-2xl font-medium mb-2 ml-2">Project Outline</h1>
+          <p
+            class="block  p-6 mr-20 bg-white  rounded-lg shadow hover:bg-gray-100 dark:bg-white dark:border-gray-700 dark:hover:white">
+            Welcome everyone! 👋 This is how we’ll collaborate together in Nifty.
+            We can add project brief, resource links, and other important information here. 🚀</p>
+          <p
+            class="block  p-6 mr-20 bg-white  rounded-lg shadow hover:bg-gray-100 dark:bg-white dark:border-gray-700 dark:hover:white">
+            Welcome everyone! 👋 This is how we’ll collaborate together in Nifty.
+            We can add project brief, resource links, and other important information here. 🚀</p>
+          <p
+            class="block  p-6 mr-20 bg-white  rounded-lg shadow hover:bg-gray-100 dark:bg-white dark:border-gray-700 dark:hover:white">
+            Welcome everyone! 👋 This is how we’ll collaborate together in Nifty.
+            We can add project brief, resource links, and other important information here. 🚀</p>
+          <p
+            class="block  p-6 mr-20 bg-white  rounded-lg shadow hover:bg-gray-100 dark:bg-white dark:border-gray-700 dark:hover:white">
+            Welcome everyone! 👋 This is how we’ll collaborate together in Nifty.
+            We can add project brief, resource links, and other important information here. 🚀</p>
+      </a>
 
 
 
-  </div>
+    </div>
 
-  </div>
-  </div>
-  </div>
-</body>
+    </div>
+    </div>
+    </div>
+  </body>
 
 </html>
 

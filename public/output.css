@@ -924,3 +924,8 @@ body {
   display: block;
   z-index: 999;
 }
+
+#sidebar {
+  height: calc(100vh - 48px);
+  position: fixed;
+}
