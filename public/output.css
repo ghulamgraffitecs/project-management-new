@@ -915,3 +915,32 @@ body {
   bottom: 0;
   content: "";
 }
+<<<<<<< HEAD
+=======
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  z-index: 999;
+}
+
+#sidebar {
+  height: calc(100vh - 48px);
+  position: fixed;
+}
+<<<<<<< Updated upstream
+.screen_pop li a:hover span {
+  color: #000;
+}
+.screen_pop li a span {
+  color: #8e94bb;
+}
+.screen_pop li a span.text-color {
+  color: #393939;
+}
+.screen_pop li a:hover span.text-color {
+  color: #393939;
+}
+=======
+
+>>>>>>> Stashed changes
+>>>>>>> db3f2c93721499fe60fa3f11c375cdec45dadb7f
