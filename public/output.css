@@ -915,25 +915,3 @@ body {
   bottom: 0;
   content: "";
 }
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  z-index: 999;
-}
-
-#sidebar {
-  height: calc(100vh - 48px);
-  position: fixed;
-}
-.screen_pop li a:hover span {
-  color: #000;
-}
-.screen_pop li a span {
-  color: #8e94bb;
-}
-.screen_pop li a span.text-color {
-  color: #393939;
-}
-.screen_pop li a:hover span.text-color {
-  color: #393939;
-}
