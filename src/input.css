@@ -79,21 +79,35 @@ body {
   border: 1px solid #e8e8e8;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .dropdown:hover .dropdown-menu {
   display: block;
   z-index: 999;
 }
+<<<<<<< Updated upstream
 
 /* #sidebar {
   height: calc(100vh - 48px);
   position: fixed;
 } */
+=======
+#sidebar {
+  height: calc(100vh);
+  position: fixed;
+}
+>>>>>>> Stashed changes
 .screen_pop li a:hover span {
   color: #000;
 }
 .screen_pop li a span {
+<<<<<<< Updated upstream
   color: #8e94bb;
+=======
+  color: #8E94BB;
+>>>>>>> Stashed changes
 }
 .screen_pop li a span.text-color {
   color: #393939;

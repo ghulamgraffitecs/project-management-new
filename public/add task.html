@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1024" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../src/input.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<!-- <div class="py-8">
+    <div>
+        <button onclick="notificationHandler(false)"
+            class="absolute top-96 focus:outline-none  py-2 px-10 rounded bg-indigo-600 hover:bg-indigo-300 text-white">Open
+            Modal</button>
+        <div class="max-w-2xl mx-auto absolute top-64">
+
+            <form class="">
+                <label for="chat" class="sr-only float-left">Your message</label>
+                <div class="flex items-center py-2 px-3 bg-gray-10 border rounded-lg dark:bg-white">
+                    <button type="button"
+                        class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <button type="button"
+                        class="p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <textarea id="chat" rows="1"
+                        class="block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-200 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Your message..."></textarea>
+                    <button type="submit"
+                        class="inline-flex justify-center p-2 text-blue-600 rounded-full cursor-pointer hover:bg-blue-100 dark:text-blue-500 dark:hover:bg-gray-600">
+                        <svg class="w-6 h-6 rotate-90" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
+
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+    </div>
+
+</div> -->
+<!-- <div class="w-full h-full  top-0 overflow-y-auto overflow-x-hidden fixed sticky-0" id="chec-div">
+   
+    <div class="w-full absolute z-10 right-0 h-full overflow-x-hidden transform translate-x-0 transition ease-in-out  duration-50"
+        id="notification">
+        <div class="2xl:w-5/12 bg-gray-50 h-screen overflow-y-auto p-8 absolute right-0 ">
+            <div><span class="nice-id mb-2 ">IBR-2</span><button role="button" aria-label="close modal"
+                    class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 rounded-md cursor-pointer float-right"
+                    onclick="notificationHandler(false)">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 6L6 18" stroke="#4B5563" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6 6L18 18" stroke="#4B5563" stroke-width="1.25" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button></div><span>
+                <div class="tag-pill action ">
+                    <div class="task-task-group meta-item">
+                        <div class="task-task-group-name">
+                            <div class="task-action ">
+                                <div class=""><span
+                                        class="task-cell-text-with-action shorten-text shorten-text-180 bg-[#fafbfd]">To
+                                        Do</span><span class="task-cell-arrow"><svg class="icon "
+                                            width="10.277777777777777px" height="6.111111111111112px"
+                                            viewBox="0 0 37 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Style-guide" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="nifty-UI-guide" transform="translate(-617.000000, -2934.000000)"
+                                                    fill="currentColor" fill-rule="nonzero">
+                                                    <g id="Group-6-Copy-3"
+                                                        transform="translate(574.000000, 2884.000000)">
+                                                        <path
+                                                            d="M70.5909903,46.8409903 C71.4696699,45.9623106 71.4696699,44.5376894 70.5909903,43.6590097 C69.7123106,42.7803301 68.2876894,42.7803301 67.4090097,43.6590097 L51.6590097,59.4090097 C50.7803301,60.2876894 50.7803301,61.7123106 51.6590097,62.5909903 L67.4090097,78.3409903 C68.2876894,79.2196699 69.7123106,79.2196699 70.5909903,78.3409903 C71.4696699,77.4623106 71.4696699,76.0376894 70.5909903,75.1590097 L56.4319805,61 L70.5909903,46.8409903 Z"
+                                                            id="Path-82"
+                                                            transform="translate(61.125000, 61.000000) rotate(-90.000000) translate(-61.125000, -61.000000) ">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg></span></div><span class="overlay-placeholder"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+
+            <div class="flex items-center justify-between">
+                <p tabindex="0" class="focus:outline-none text-2xl font-semibold leading-6 text-gray-800">New Task</p>
+
+            </div>
+            <span class="mt-6">Add task description</span>
+
+            <div class=" p-3 mt-8 bg-white rounded ">
+                <div class="content-panel-utils gap-3 mb-2  grid grid-cols-3">
+                    <div class="control wider ">
+                        <div class="control-inner">
+                            <div class="control-label"><span class="control-icon"><svg class="icon " width="1em"
+                                        height="1em" viewBox="0 0 10 10" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Team-overview---search"
+                                                transform="translate(-195.000000, -181.000000)" fill="currentColor">
+                                                <g id="Group-2" transform="translate(121.000000, 153.000000)">
+                                                    <path
+                                                        d="M75,35.4952421 L75,36.17338 C75.1749893,36.2801701 76.5730894,36.9985151 78.9999999,36.9985149 C81.4269104,36.9985146 82.8251939,36.2809335 83,36.1742018 L83,35.4952421 C83,34.6371765 81.0964783,33.9698598 80.9607895,33.9187773 C80.5350099,34.6829256 79.905538,35.2499999 79,35.25 C78.0949419,35.2500001 77.4656574,34.6835268 77.0398876,33.9199923 C76.9055757,33.9704691 75,34.635437 75,35.4952421 Z M76.25,30.5893243 C76.25,29.15928 77.4812169,28 79,28 C80.5187831,28 81.75,29.15928 81.75,30.5893243 C81.75,31.1961664 81.6440039,32.1272483 81.3568094,32.9981097 C82.3582639,33.3806945 84,34.0003662 84,35.4952421 L84,36.4988173 C84,37.0513451 81.8424683,37.9999997 79,38 C76.1575317,38.0000003 74,37.0494601 74,36.4988173 L74,35.4952421 C74,33.9952087 75.642655,33.3812319 76.6436151,32.9993966 C76.3561006,32.1281657 76.25,31.1964653 76.25,30.5893243 Z M78.9999998,34.25 C79.9847893,34.2499998 80.75,32.4413168 80.75,30.5893243 C80.75,29.7254728 79.9795093,29 79,29 C78.0204907,29 77.25,29.7254728 77.25,30.5893243 C77.25,32.4413169 78.0152107,34.2500002 78.9999998,34.25 Z"
+                                                        id="Combined-Shape"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg></span><span class="control-text">Assignees</span></div>
+                            <div class="control-value">
+                                <div class="users-list-component users-list-component-small ">
+                                    <div class="add-user"><span class="undefined"><span
+                                                class="action-text">Add</span></span><span
+                                            class="overlay-placeholder"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="control-inner">
+                            <div class="control-label"><span class="control-icon"><svg class="icon " width="1em"
+                                        height="0.7857142857142857em" viewBox="0 0 14 11" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.606 9.4L.272 5.974c-.363-.509-.363-1.272 0-1.78L2.606.787C2.93.333 3.574 0 4.129 0h8.6C13.431 0 14 .571 14 1.27v7.646c0 .701-.57 1.27-1.27 1.27h-8.6c-.557 0-1.2-.332-1.524-.786zM1.3 4.957c-.047.065-.047.234 0 .3L3.642 8.66c.086.12.343.253.487.253h8.598v-7.64H4.129c-.143 0-.402.134-.487.254L1.3 4.957zm1.877.136a1.91 1.91 0 1 1 3.82 0 1.91 1.91 0 0 1-3.82 0zm2.547 0a.637.637 0 1 0-1.274 0 .637.637 0 0 0 1.274 0z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg></span><span class="control-text">Tags</span></div>
+                            <div class="control-value">
+                                <div class="labels-list inverted"><span class="action-text">Add</span></div>
+                            </div><span class="overlay-placeholder"></span>
+                        </div>
+                    </div>
+                    <div class="control narrower">
+                        <div class="control-inner">
+                            <div class="control-label"><span class="control-icon"><svg class="icon " width="1em"
+                                        height="0.8125em" viewBox="0 0 16 13" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg></span><span class="control-text">Milestone</span></div>
+                            <div class="control-value"><span class="action-text">Tie</span></div>
+                            <div class="popout-toggle"></div><span class="overlay-placeholder"></span>
+                        </div>
+                    </div>
+                    <div class="control wider">
+                        <div class="control-inner">
+                            <div class="control-label"><span class="control-icon"><svg class="icon " width="1em"
+                                        height="1em" viewBox="0 0 14 15" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.6 3.5c0-.387-.312-.7-.697-.7a.703.703 0 0 1-.703.7c-.387 0-.7-.31-.7-.7H9.1c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H6.3c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H3.5c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7-.388 0-.7.313-.7.7v1.4h11.2V3.5zM1.4 6.3v6.3c0 .387.312.7.697.7h9.806a.698.698 0 0 0 .697-.7V6.3H1.4zM14 3.5v9.1c0 1.16-.938 2.1-2.097 2.1H2.097A2.099 2.099 0 0 1 0 12.6V3.5c0-1.16.938-2.1 2.097-2.1L2.1.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7A2.1 2.1 0 0 1 14 3.5z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg></span><span class="control-text">Dates</span></div>
+                            <div class="control-value">
+                                <div class="meta-item with-tooltip task-action task-dates can-edit"><span
+                                        class="placeholder action-text">Add</span><span
+                                        class="overlay-placeholder"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="control-inner">
+                            <div class="control-label"><span class="control-icon"><svg class="icon " width="0.75em"
+                                        height="0.5833333333333334em" viewBox="0 0 9 7" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.822 6.178a.857.857 0 0 0 1.213 0l4.714-4.715A.857.857 0 1 0 7.537.251l-4.108 4.12-1.966-1.977A.857.857 0 0 0 .251 3.606l2.571 2.572z"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg></span><span class="control-text">Dependency</span></div>
+                            <div class="control-value"><span class="action-text">Set</span></div>
+                            <div class="popout-toggle"></div><span class="overlay-placeholder"></span>
+                        </div>
+                    </div>
+                    <div class="control narrower">
+                        <div class="control-inner">
+                            <div class="control-label"><span class="control-icon"><svg class="icon " width="1em"
+                                        height="1em" viewBox="0 0 16 16" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="currentColor"
+                                            d="M15 6V4h-2.6l.6-2.8-2-.4-.7 3.2h-3L8 1.2 6 .8 5.3 4H2v2h2.9L4 10H1v2h2.6L3 14.8l2 .4.7-3.2h3L8 14.8l2 .4.7-3.2H14v-2h-2.9l.9-4h3zm-6 4H6l1-4h3l-1 4z">
+                                        </path>
+                                    </svg></span><span class="control-text">Story Points<span
+                                        class="help-element over-click-overlay "><i
+                                            class="help-icon material-icons">help</i></span></span></div>
+                            <div class="control-value">
+                                <div class="task-story-points meta-item"><input class="meta-field placeholder"
+                                        type="number" placeholder="Set" value=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div class="section-head">
+                    <h4><span class="title-icon"><svg class="icon " width="0.8333333333333334em" height="1em"
+                                viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.235 10.47l-.882-1.764-.882 1.763 1.764.002zm-2.141 1.173l-.385.855c-.13.29-.449.409-.71.263-.262-.145-.368-.498-.237-.789l2.117-4.706c.196-.433.752-.433.947 0l2.118 4.706c.13.29.025.644-.237.79-.261.145-.58.027-.71-.264l-.384-.853-2.519-.002zM9.237 4h.528c.292 0 .53.25.53.559 0 .308-.238.559-.53.559h-.528c-.587 0-1.06.499-1.06 1.119v6.703c0 .619.473 1.119 1.06 1.119h.528c.292 0 .53.25.53.559 0 .308-.238.558-.53.558h-.528a2.067 2.067 0 0 1-1.59-.757 2.067 2.067 0 0 1-1.59.757H5.53c-.292 0-.529-.25-.529-.558 0-.309.237-.56.53-.56h.527c.587 0 1.06-.5 1.06-1.118V6.237c0-.62-.473-1.12-1.06-1.12H5.53c-.292 0-.529-.25-.529-.558C5 4.25 5.237 4 5.53 4h.527c.634 0 1.202.292 1.59.757A2.067 2.067 0 0 1 9.237 4z"
+                                    transform="translate(-5 -4)" fill="currentColor" fill-rule="evenodd"></path>
+                            </svg></span><span class="text pr-1">Custom Fields</span><button
+                            class="btn btn-circle btn-xxsmall btn-simple btn-icon btn-colored pl-2 ml-2">+</button></h4>
+                            <div class="text-sm text-gray-400">
+                                Add specific information, data, and even custom calculations.
+                            </div>
+                </div>
+                <div class="grid row-span-3">
+                    <div>
+dscds
+                    </div>
+                    <div>
+                        sdvsdv
+                    </div>
+                    <div>
+                        scdscds
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+            <div class="w-full p-3 mt-4 bg-white rounded shadow flex flex-shrink-0">
+                <div class="item-main"><div class="item-head"><div class="item-marker item-click-action"><svg class="icon " width="1em" height="1em" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.66667 0.666569C6.66667 0.296631 6.36819 0 6 0C5.62924 0 5.33333 0.298433 5.33333 0.666569V5.33333H0.666569C0.296631 5.33333 0 5.63181 0 6C0 6.37076 0.298433 6.66667 0.666569 6.66667H5.33333V11.3334C5.33333 11.7034 5.63181 12 6 12C6.37076 12 6.66667 11.7016 6.66667 11.3334V6.66667H11.3334C11.7034 6.66667 12 6.36819 12 6C12 5.62924 11.7016 5.33333 11.3334 5.33333H6.66667V0.666569Z" fill="currentColor"></path></svg></div></div><div class="item-body"><div class="item-title-holder"><div class="multi-line-input item-title empty" contenteditable="true" placeholder="Add a new subtask..."></div></div><div class="item-utils"></div></div></div>
+            </div>
+            <div class="w-full p-3 mt-4 bg-white rounded flex">
+                <div tabindex="0" aria-label="post icon" role="img"
+                    class="focus:outline-none w-8 h-8 border rounded-full border-gray-200 flex items-center justify-center">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.30325 12.6667L1.33325 15V2.66667C1.33325 2.48986 1.40349 2.32029 1.52851 2.19526C1.65354 2.07024 1.82311 2 1.99992 2H13.9999C14.1767 2 14.3463 2.07024 14.4713 2.19526C14.5963 2.32029 14.6666 2.48986 14.6666 2.66667V12C14.6666 12.1768 14.5963 12.3464 14.4713 12.4714C14.3463 12.5964 14.1767 12.6667 13.9999 12.6667H4.30325ZM5.33325 6.66667V8H10.6666V6.66667H5.33325Z"
+                            fill="#4338CA" />
+                    </svg>
+                </div>
+                <div class="pl-3">
+                    <p tabindex="0" class="focus:outline-none text-sm leading-none"><span
+                            class="text-indigo-700">Sarah</span> posted in the thread: <span
+                            class="text-indigo-700">Update gone wrong</span></p>
+                    <p tabindex="0" class="focus:outline-none text-xs leading-3 pt-1 text-gray-500">2 hours ago</p>
+                </div>
+            </div>
+            <div class="w-full p-3 mt-4 bg-red-100 rounded flex items-center">
+                <div tabindex="0" aria-label="storage icon" role="img"
+                    class="focus:outline-none w-8 h-8 border rounded-full border-red-200 flex items-center flex-shrink-0 justify-center">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14 2V14C14 14.1768 13.9298 14.3464 13.8047 14.4714C13.6797 14.5964 13.5101 14.6667 13.3333 14.6667H2.66667C2.48986 14.6667 2.32029 14.5964 2.19526 14.4714C2.07024 14.3464 2 14.1768 2 14V2C2 1.82319 2.07024 1.65362 2.19526 1.5286C2.32029 1.40357 2.48986 1.33334 2.66667 1.33334H13.3333C13.5101 1.33334 13.6797 1.40357 13.8047 1.5286C13.9298 1.65362 14 1.82319 14 2ZM3.33333 10.6667V13.3333H12.6667V10.6667H3.33333ZM10 11.3333H11.3333V12.6667H10V11.3333Z"
+                            fill="#B91C1C" />
+                    </svg>
+                </div>
+                <div class="pl-3 w-full flex items-center justify-between">
+                    <p tabindex="0" class="focus:outline-none text-sm leading-none text-red-700">Low on storage:
+                        2.5/32gb remaining</p>
+                    <p tabindex="0"
+                        class="focus:outline-none text-xs leading-3 cursor-pointer underline text-right text-red-700">
+                        Manage</p>
+                </div>
+            </div>
+            <div class="w-full p-3 mt-4 bg-white rounded flex">
+                <div tabindex="0" aria-label="loading icon" role="img"
+                    class="focus:outline-none w-8 h-8 border rounded-full border-gray-200 flex items-center justify-center">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.99992 1.33333C8.17673 1.33333 8.3463 1.40357 8.47132 1.52859C8.59635 1.65361 8.66659 1.82318 8.66659 1.99999V3.99999C8.66659 4.17681 8.59635 4.34638 8.47132 4.4714C8.3463 4.59642 8.17673 4.66666 7.99992 4.66666C7.82311 4.66666 7.65354 4.59642 7.52851 4.4714C7.40349 4.34638 7.33325 4.17681 7.33325 3.99999V1.99999C7.33325 1.82318 7.40349 1.65361 7.52851 1.52859C7.65354 1.40357 7.82311 1.33333 7.99992 1.33333ZM7.99992 11.3333C8.17673 11.3333 8.3463 11.4036 8.47132 11.5286C8.59635 11.6536 8.66659 11.8232 8.66659 12V14C8.66659 14.1768 8.59635 14.3464 8.47132 14.4714C8.3463 14.5964 8.17673 14.6667 7.99992 14.6667C7.82311 14.6667 7.65354 14.5964 7.52851 14.4714C7.40349 14.3464 7.33325 14.1768 7.33325 14V12C7.33325 11.8232 7.40349 11.6536 7.52851 11.5286C7.65354 11.4036 7.82311 11.3333 7.99992 11.3333ZM14.6666 8C14.6666 8.17681 14.5963 8.34638 14.4713 8.4714C14.3463 8.59642 14.1767 8.66666 13.9999 8.66666H11.9999C11.8231 8.66666 11.6535 8.59642 11.5285 8.4714C11.4035 8.34638 11.3333 8.17681 11.3333 8C11.3333 7.82318 11.4035 7.65361 11.5285 7.52859C11.6535 7.40357 11.8231 7.33333 11.9999 7.33333H13.9999C14.1767 7.33333 14.3463 7.40357 14.4713 7.52859C14.5963 7.65361 14.6666 7.82318 14.6666 8ZM4.66659 8C4.66659 8.17681 4.59635 8.34638 4.47132 8.4714C4.3463 8.59642 4.17673 8.66666 3.99992 8.66666H1.99992C1.82311 8.66666 1.65354 8.59642 1.52851 8.4714C1.40349 8.34638 1.33325 8.17681 1.33325 8C1.33325 7.82318 1.40349 7.65361 1.52851 7.52859C1.65354 7.40357 1.82311 7.33333 1.99992 7.33333H3.99992C4.17673 7.33333 4.3463 7.40357 4.47132 7.52859C4.59635 7.65361 4.66659 7.82318 4.66659 8ZM12.7139 12.714C12.5889 12.839 12.4194 12.9092 12.2426 12.9092C12.0658 12.9092 11.8963 12.839 11.7713 12.714L10.3573 11.3C10.2358 11.1743 10.1686 11.0059 10.1701 10.8311C10.1717 10.6563 10.2418 10.4891 10.3654 10.3654C10.489 10.2418 10.6562 10.1717 10.831 10.1702C11.0058 10.1687 11.1742 10.2359 11.2999 10.3573L12.7139 11.7707C12.7759 11.8326 12.8251 11.9061 12.8586 11.987C12.8922 12.068 12.9094 12.1547 12.9094 12.2423C12.9094 12.3299 12.8922 12.4167 12.8586 12.4976C12.8251 12.5786 12.7759 12.6521 12.7139 12.714ZM5.64259 5.64266C5.51757 5.76764 5.34803 5.83785 5.17125 5.83785C4.99448 5.83785 4.82494 5.76764 4.69992 5.64266L3.28659 4.22933C3.16149 4.10432 3.09118 3.93474 3.09112 3.7579C3.09105 3.58105 3.16125 3.41142 3.28625 3.28633C3.41126 3.16123 3.58084 3.09092 3.75768 3.09086C3.93453 3.0908 4.10416 3.16099 4.22925 3.28599L5.64259 4.7C5.76757 4.82501 5.83778 4.99455 5.83778 5.17133C5.83778 5.3481 5.76757 5.51764 5.64259 5.64266ZM3.28659 12.714C3.1616 12.589 3.09139 12.4194 3.09139 12.2427C3.09139 12.0659 3.1616 11.8963 3.28659 11.7713L4.70059 10.3573C4.76208 10.2937 4.83565 10.2429 4.91698 10.2079C4.99832 10.173 5.0858 10.1546 5.17432 10.1538C5.26284 10.1531 5.35062 10.1699 5.43256 10.2034C5.51449 10.237 5.58892 10.2865 5.65152 10.3491C5.71411 10.4117 5.76361 10.4861 5.79713 10.568C5.83065 10.65 5.84752 10.7377 5.84675 10.8263C5.84598 10.9148 5.82759 11.0023 5.79265 11.0836C5.75771 11.1649 5.70693 11.2385 5.64325 11.3L4.22992 12.714C4.168 12.776 4.09448 12.8252 4.01355 12.8587C3.93261 12.8923 3.84586 12.9095 3.75825 12.9095C3.67064 12.9095 3.58389 12.8923 3.50296 12.8587C3.42203 12.8252 3.3485 12.776 3.28659 12.714ZM10.3573 5.64266C10.2323 5.51764 10.1621 5.3481 10.1621 5.17133C10.1621 4.99455 10.2323 4.82501 10.3573 4.7L11.7706 3.28599C11.8956 3.1609 12.0652 3.09059 12.242 3.09053C12.4189 3.09046 12.5885 3.16066 12.7136 3.28566C12.8387 3.41067 12.909 3.58025 12.9091 3.75709C12.9091 3.93394 12.8389 4.10357 12.7139 4.22866L11.2999 5.64266C11.1749 5.76764 11.0054 5.83785 10.8286 5.83785C10.6518 5.83785 10.4823 5.76764 10.3573 5.64266Z"
+                            fill="#F59E0B" />
+                    </svg>
+                </div>
+                <div class="pl-3">
+                    <p tabindex="0" class="focus:outline-none text-sm leading-none">Shipmet delayed for order<span
+                            class="text-indigo-700"> #25551</span></p>
+                    <p tabindex="0" class="focus:outline-none text-xs leading-3 pt-1 text-gray-500">2 hours ago</p>
+                </div>
+            </div>
+            <h2 tabindex="0"
+                class="focus:outline-none text-sm leading-normal pt-8 border-b pb-2 border-gray-300 text-gray-600">
+                YESTERDAY</h2>
+            <div class="w-full p-3 mt-6 bg-white rounded flex">
+                <div tabindex="0" aria-label="post icon" role="img"
+                    class="focus:outline-none w-8 h-8 border rounded-full border-gray-200 flex items-center justify-center">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.30325 12.6667L1.33325 15V2.66667C1.33325 2.48986 1.40349 2.32029 1.52851 2.19526C1.65354 2.07024 1.82311 2 1.99992 2H13.9999C14.1767 2 14.3463 2.07024 14.4713 2.19526C14.5963 2.32029 14.6666 2.48986 14.6666 2.66667V12C14.6666 12.1768 14.5963 12.3464 14.4713 12.4714C14.3463 12.5964 14.1767 12.6667 13.9999 12.6667H4.30325ZM5.33325 6.66667V8H10.6666V6.66667H5.33325Z"
+                            fill="#4338CA" />
+                    </svg>
+                </div>
+                <div class="pl-3">
+                    <p tabindex="0" class="focus:outline-none text-sm leading-none"><span
+                            class="text-indigo-700">Sarah</span> posted in the thread: <span
+                            class="text-indigo-700">Update gone wrong</span></p>
+                    <p tabindex="0" class="focus:outline-none text-xs leading-3 pt-1 text-gray-500">2 hours ago</p>
+                </div>
+            </div>
+            <div class="w-full p-3 mt-4 bg-white rounded flex">
+                <div tabindex="0" aria-label="loading icon" role="img"
+                    class="focus:outline-none w-8 h-8 border rounded-full border-gray-200 flex items-center justify-center">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.99992 1.33333C8.17673 1.33333 8.3463 1.40357 8.47132 1.52859C8.59635 1.65361 8.66659 1.82318 8.66659 1.99999V3.99999C8.66659 4.17681 8.59635 4.34638 8.47132 4.4714C8.3463 4.59642 8.17673 4.66666 7.99992 4.66666C7.82311 4.66666 7.65354 4.59642 7.52851 4.4714C7.40349 4.34638 7.33325 4.17681 7.33325 3.99999V1.99999C7.33325 1.82318 7.40349 1.65361 7.52851 1.52859C7.65354 1.40357 7.82311 1.33333 7.99992 1.33333ZM7.99992 11.3333C8.17673 11.3333 8.3463 11.4036 8.47132 11.5286C8.59635 11.6536 8.66659 11.8232 8.66659 12V14C8.66659 14.1768 8.59635 14.3464 8.47132 14.4714C8.3463 14.5964 8.17673 14.6667 7.99992 14.6667C7.82311 14.6667 7.65354 14.5964 7.52851 14.4714C7.40349 14.3464 7.33325 14.1768 7.33325 14V12C7.33325 11.8232 7.40349 11.6536 7.52851 11.5286C7.65354 11.4036 7.82311 11.3333 7.99992 11.3333ZM14.6666 8C14.6666 8.17681 14.5963 8.34638 14.4713 8.4714C14.3463 8.59642 14.1767 8.66666 13.9999 8.66666H11.9999C11.8231 8.66666 11.6535 8.59642 11.5285 8.4714C11.4035 8.34638 11.3333 8.17681 11.3333 8C11.3333 7.82318 11.4035 7.65361 11.5285 7.52859C11.6535 7.40357 11.8231 7.33333 11.9999 7.33333H13.9999C14.1767 7.33333 14.3463 7.40357 14.4713 7.52859C14.5963 7.65361 14.6666 7.82318 14.6666 8ZM4.66659 8C4.66659 8.17681 4.59635 8.34638 4.47132 8.4714C4.3463 8.59642 4.17673 8.66666 3.99992 8.66666H1.99992C1.82311 8.66666 1.65354 8.59642 1.52851 8.4714C1.40349 8.34638 1.33325 8.17681 1.33325 8C1.33325 7.82318 1.40349 7.65361 1.52851 7.52859C1.65354 7.40357 1.82311 7.33333 1.99992 7.33333H3.99992C4.17673 7.33333 4.3463 7.40357 4.47132 7.52859C4.59635 7.65361 4.66659 7.82318 4.66659 8ZM12.7139 12.714C12.5889 12.839 12.4194 12.9092 12.2426 12.9092C12.0658 12.9092 11.8963 12.839 11.7713 12.714L10.3573 11.3C10.2358 11.1743 10.1686 11.0059 10.1701 10.8311C10.1717 10.6563 10.2418 10.4891 10.3654 10.3654C10.489 10.2418 10.6562 10.1717 10.831 10.1702C11.0058 10.1687 11.1742 10.2359 11.2999 10.3573L12.7139 11.7707C12.7759 11.8326 12.8251 11.9061 12.8586 11.987C12.8922 12.068 12.9094 12.1547 12.9094 12.2423C12.9094 12.3299 12.8922 12.4167 12.8586 12.4976C12.8251 12.5786 12.7759 12.6521 12.7139 12.714ZM5.64259 5.64266C5.51757 5.76764 5.34803 5.83785 5.17125 5.83785C4.99448 5.83785 4.82494 5.76764 4.69992 5.64266L3.28659 4.22933C3.16149 4.10432 3.09118 3.93474 3.09112 3.7579C3.09105 3.58105 3.16125 3.41142 3.28625 3.28633C3.41126 3.16123 3.58084 3.09092 3.75768 3.09086C3.93453 3.0908 4.10416 3.16099 4.22925 3.28599L5.64259 4.7C5.76757 4.82501 5.83778 4.99455 5.83778 5.17133C5.83778 5.3481 5.76757 5.51764 5.64259 5.64266ZM3.28659 12.714C3.1616 12.589 3.09139 12.4194 3.09139 12.2427C3.09139 12.0659 3.1616 11.8963 3.28659 11.7713L4.70059 10.3573C4.76208 10.2937 4.83565 10.2429 4.91698 10.2079C4.99832 10.173 5.0858 10.1546 5.17432 10.1538C5.26284 10.1531 5.35062 10.1699 5.43256 10.2034C5.51449 10.237 5.58892 10.2865 5.65152 10.3491C5.71411 10.4117 5.76361 10.4861 5.79713 10.568C5.83065 10.65 5.84752 10.7377 5.84675 10.8263C5.84598 10.9148 5.82759 11.0023 5.79265 11.0836C5.75771 11.1649 5.70693 11.2385 5.64325 11.3L4.22992 12.714C4.168 12.776 4.09448 12.8252 4.01355 12.8587C3.93261 12.8923 3.84586 12.9095 3.75825 12.9095C3.67064 12.9095 3.58389 12.8923 3.50296 12.8587C3.42203 12.8252 3.3485 12.776 3.28659 12.714ZM10.3573 5.64266C10.2323 5.51764 10.1621 5.3481 10.1621 5.17133C10.1621 4.99455 10.2323 4.82501 10.3573 4.7L11.7706 3.28599C11.8956 3.1609 12.0652 3.09059 12.242 3.09053C12.4189 3.09046 12.5885 3.16066 12.7136 3.28566C12.8387 3.41067 12.909 3.58025 12.9091 3.75709C12.9091 3.93394 12.8389 4.10357 12.7139 4.22866L11.2999 5.64266C11.1749 5.76764 11.0054 5.83785 10.8286 5.83785C10.6518 5.83785 10.4823 5.76764 10.3573 5.64266Z"
+                            fill="#F59E0B" />
+                    </svg>
+                </div>
+                <div class="pl-3">
+                    <p tabindex="0" class="focus:outline-none text-sm leading-none">Shipmet delayed for order<span
+                            class="text-indigo-700"> #25551</span></p>
+                    <p tabindex="0" class="focus:outline-none text-xs leading-3 pt-1 text-gray-500">2 hours ago</p>
+                </div>
+            </div>
+            <div class="w-full p-3 mt-4 bg-white rounded flex">
+                <div tabindex="0" aria-label="heart icon" role="img"
+                    class="focus:outline-none w-8 h-8 border rounded-full border-gray-200 flex items-center justify-center">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.00059 3.01934C9.56659 1.61334 11.9866 1.66 13.4953 3.17134C15.0033 4.68334 15.0553 7.09133 13.6526 8.662L7.99926 14.3233L2.34726 8.662C0.944589 7.09133 0.997256 4.67934 2.50459 3.17134C4.01459 1.662 6.42992 1.61134 8.00059 3.01934Z"
+                            fill="#EF4444" />
+                    </svg>
+                </div>
+                <div class="pl-3">
+                    <p tabindex="0" class="focus:outline-none text-sm leading-none"><span class="text-indigo-700">James
+                            Doe</span> favourited an <span class="text-indigo-700">item</span></p>
+                    <p tabindex="0" class="focus:outline-none text-xs leading-3 pt-1 text-gray-500">2 hours ago</p>
+                </div>
+            </div>
+            <div class="w-full p-3 mt-8 bg-green-100 rounded flex items-center">
+                <div tabindex="0" aria-label="success icon" role="img"
+                    class="focus:outline-none w-8 h-8 border rounded-full border-green-200 flex flex-shrink-0 items-center justify-center">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.66674 10.1147L12.7947 3.98599L13.7381 4.92866L6.66674 12L2.42407 7.75733L3.36674 6.81466L6.66674 10.1147Z"
+                            fill="#047857" />
+                    </svg>
+                </div>
+                <div class="pl-3 w-full">
+                    <div class="flex items-center justify-between">
+                        <p tabindex="0" class="focus:outline-none text-sm leading-none text-green-700">Design sprint
+                            completed</p>
+                        <p tabindex="0"
+                            class="focus:outline-none focus:text-indigo-600 text-xs leading-3 underline cursor-pointer text-green-700">
+                            View</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justiyf-between">
+                <hr class="w-full">
+                <p tabindex="0"
+                    class="focus:outline-none text-sm flex flex-shrink-0 leading-normal px-3 py-16 text-gray-500">Thats
+                    it for now :)</p>
+                <hr class="w-full">
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- 
+<script>let notification = document.getElementById("notification");
+    let checdiv = document.getElementById("chec-div");
+    let flag3 = false;
+    const notificationHandler = () => {
+        if (!flag3) {
+            notification.classList.add("translate-x-full");
+            notification.classList.remove("translate-x-0");
+            setTimeout(function () {
+                checdiv.classList.add("hidden");
+            }, 100);
+            flag3 = true;
+        } else {
+            setTimeout(function () {
+                notification.classList.remove("translate-x-full");
+                notification.classList.add("translate-x-0");
+            }, 100);
+            checdiv.classList.remove("hidden");
+            flag3 = false;
+        }
+    };
+
+</script> -->
+
+
+<!-- <div class="mb-44 ml-14"> -->
+<!-- <div class="flex justify-between border border-t-4 border-t-[#ff6650] bg-white rounded-lg p-4 ml-3  w-[600px] ">
+      <h3 class="text-md flex font-semibold"><span><svg class="icon relative top-[5px] right-2 cursor-pointer"
+            width="1em" height="0.8125em" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
+              fill="#969bc0" fill-rule="evenodd"></path>
+          </svg></span> Tasks <span><svg class="icon  relative top-[5px] left-3 cursor-pointer"
+            width="0.5454545454545454em" height="1em" viewBox="0 0 6 11" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="Overview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Team-overview---profile---2" transform="translate(-1194.000000, -457.000000)" fill="#969bc0">
+                <g id="Rectangle-4" transform="translate(232.000000, 30.000000)">
+                  <g id="Group-41" transform="translate(35.000000, 278.000000)">
+                    <g id="Group-40" transform="translate(0.000000, 72.000000)">
+                      <g id="Group-36-Copy-3" transform="translate(900.000000, 22.000000)">
+                        <path
+                          d="M32.8047379,56.1380712 C33.0650874,55.8777217 33.0650874,55.4556117 32.8047379,55.1952621 C32.5443883,54.9349126 32.1222783,54.9349126 31.8619288,55.1952621 L27.1952621,59.8619288 C26.9349126,60.1222783 26.9349126,60.5443883 27.1952621,60.8047379 L31.8619288,65.4714045 C32.1222783,65.731754 32.5443883,65.731754 32.8047379,65.4714045 C33.0650874,65.211055 33.0650874,64.788945 32.8047379,64.5285955 L28.6094757,60.3333333 L32.8047379,56.1380712 Z"
+                          id="Path-82"
+                          transform="translate(30.000000, 60.333333) scale(-1, 1) translate(-30.000000, -60.333333) ">
+                        </path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg></span></h3>
+      <span><button class="btn btn-transparent pr-2 text-md text-[#009084] font-semibold">Add a
+          Milestone</button><button class="btn widget-util-btn"><svg class="icon " width="0.875em"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M448 56v95.005c0 21.382-25.851 32.09-40.971 16.971l-27.704-27.704-107.242 107.243c-4.686 4.686-12.284 4.686-16.971 0l-22.627-22.627c-4.686-4.686-4.686-12.284 0-16.971l107.243-107.243-27.704-27.704C296.905 57.851 307.613 32 328.995 32H424c13.255 0 24 10.745 24 24zM175.917 264.485L68.674 371.728 40.97 344.024C25.851 328.905 0 339.613 0 360.995V456c0 13.255 10.745 24 24 24h95.005c21.382 0 32.09-25.851 16.971-40.971l-27.704-27.704 107.243-107.243c4.686-4.686 4.686-12.284 0-16.971l-22.627-22.627c-4.687-4.685-12.285-4.685-16.971.001z"
+              fill="currentColor"></path>
+          </svg></button></span>
+    </div> -->
+<!-- <div class="flex ml-3">
+      <div class=" relative flex flex-col  w-[600px] bg-white shadow-3xl shadow-shadow-500 ">
+        <div class="relative flex flex-row justify-between">
+        </div>
+        <div class="h-[300px]">
+          <div class="mt-5 flex items-center w-100  bg-white mb-2 justify-between "> -->
+<!-- <div class="flex items-center justify-center gap-2">
+              <input type="checkbox"
+                class="defaultCheckbox relative  h-[20px] min-h-[20px] w-[20px] min-w-[20px] ml-1 appearance-none items-center bg-gray-200
+                        justify-center rounded-md  border-gray-600 text-white/0 outline-none transition duration-[0.2s]
+                        checked:border-none checked:text-white hover:cursor-pointer checked:bg-brand-200 dark:checked:bg-[#57b6af]"
+                name="weekly" />
+              <p class="text-base font-bold text-black dark:text-[#4b4b4b]">
+                Landing Page Design
+              </p><span class=" ml-[350px]">
+                <div class="dropdown inline-block relative ">
+                  <button class=" font-semibold py-2 px-4 rounded inline-flex items-center">
+                    <Span
+                      class="items-center font-bold inline-flex text-white align-middle bg-[#ffc107] border-[#f9a33ad9] h-6 w-6 pl-2 rounded-md text-[9px] ">MI<Span>
+                        <span
+                          class="h-2 m-0 absolute w-2 1 border border-white bg-green-500 rounded-full top-6 right-3"></span>
+                  </button>
+                  <ul
+                    class="dropdown-menu absolute hidden text-gray-700  bg-white right-0 min-w-[294px] h-[305px] border  ">
+                    <div class=" flex">
+                      <Span
+                        class="items-center font-bold inline-flex text-white align-middle bg-[#ffc107] border-[#f9a33ad9] h-16 w-16 pl-5 pb-1 rounded-md ml-5 mt-4 text-xl">MI
+                      </Span>
+                      <div class="text-[#8e94bb] text-base font-medium inline-flex flex-col ml-24 absolute mt-3">
+                        <h5 class="">M.Ibrahim</h5>
+                        <span
+                          class="h-2 m-0 absolute w-2 border border-white bg-green-500 rounded-full -right-3"></span>
+                        <h6 class=" opacity-60 font-semibold text-xs uppercase mb-2">Owner</h6>
+                        <button class=" border border-[#363c5b] text-[#7c88c7]   px-1 flex  text-sm  w-12 rounded ">
+                          <svg class="mr-1 mt-1 " width="12px" height="12px" viewBox="0 0 12 12" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.66667 0.666569C6.66667 0.296631 6.36819 0 6 0C5.62924 0 5.33333 0.298433 5.33333 0.666569V5.33333H0.666569C0.296631 5.33333 0 5.63181 0 6C0 6.37076 0.298433 6.66667 0.666569 6.66667H5.33333V11.3334C5.33333 11.7034 5.63181 12 6 12C6.37076 12 6.66667 11.7016 6.66667 11.3334V6.66667H11.3334C11.7034 6.66667 12 6.36819 12 6C12 5.62924 11.7016 5.33333 11.3334 5.33333H6.66667V0.666569Z"
+                              fill="currentColor"></path>
+                          </svg>
+                          Tag
+                        </button>
+                      </div>
+
+                    </div>
+                    <div class="pt-0 px-4 pb-3 flex-col mt-7 hover:text-[#009084]  ">
+                      <button
+                        class="min-w-full px-0 bg-white border border-[#e8e8e8] py-2 rounded-md font-semibold hover:shadow-md">Set
+                        yourself as
+                        <span class="font-bold">Away</span></button>
+                    </div>
+                    <hr>
+                    <div class="bg-[#fafbfd] h-[140px] w-full py-3 px-4">
+                      <div class="text-xs mb-1 text-[#8e94bb] font-medium ">
+                        <i class="fa-solid fa-envelope  mr-1 text-xs" style="color: #8e94bb;"></i>
+                        M.Ibrahim122@gmail.com
+                      </div>
+                      <div class="text-xs mb-1 text-[#8e94bb] font-medium ">
+                        <i class="fa-regular fa-clock fa-fw" style="color: #8e94bb;"></i>
+                        <span>
+                          <time>11:42AM</time>
+                          &nbsp; (local time)
+                        </span>
+                      </div>
+                      <div class="flex mt-3 -mx-1">
+                        <button
+                          class="px-1 w-2/4 flex-auto bg-white border border-[#e8e8e8] h-8 text-sm items-center rounded-md font-semibold hover:text-[#009084] hover:shadow-md ">
+                          <svg class="inline-flex mr-1 -mt-1" width="1em" height="1em" viewBox="0 0 10 10" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g id="Team-overview---search" transform="translate(-195.000000, -181.000000)"
+                                fill="currentColor">
+                                <g id="Group-2" transform="translate(121.000000, 153.000000)">
+                                  <path
+                                    d="M75,35.4952421 L75,36.17338 C75.1749893,36.2801701 76.5730894,36.9985151 78.9999999,36.9985149 C81.4269104,36.9985146 82.8251939,36.2809335 83,36.1742018 L83,35.4952421 C83,34.6371765 81.0964783,33.9698598 80.9607895,33.9187773 C80.5350099,34.6829256 79.905538,35.2499999 79,35.25 C78.0949419,35.2500001 77.4656574,34.6835268 77.0398876,33.9199923 C76.9055757,33.9704691 75,34.635437 75,35.4952421 Z M76.25,30.5893243 C76.25,29.15928 77.4812169,28 79,28 C80.5187831,28 81.75,29.15928 81.75,30.5893243 C81.75,31.1961664 81.6440039,32.1272483 81.3568094,32.9981097 C82.3582639,33.3806945 84,34.0003662 84,35.4952421 L84,36.4988173 C84,37.0513451 81.8424683,37.9999997 79,38 C76.1575317,38.0000003 74,37.0494601 74,36.4988173 L74,35.4952421 C74,33.9952087 75.642655,33.3812319 76.6436151,32.9993966 C76.3561006,32.1281657 76.25,31.1964653 76.25,30.5893243 Z M78.9999998,34.25 C79.9847893,34.2499998 80.75,32.4413168 80.75,30.5893243 C80.75,29.7254728 79.9795093,29 79,29 C78.0204907,29 77.25,29.7254728 77.25,30.5893243 C77.25,32.4413169 78.0152107,34.2500002 78.9999998,34.25 Z"
+                                    id="Combined-Shape"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                          See profile
+                        </button>
+                      </div>
+                      <div class="flex mt-3 -mx-1">
+                        <button
+                          class="px-1 w-2/4 flex-auto bg-white border border-[#e8e8e8] h-8 text-sm items-center rounded-md font-semibold hover:text-[#009084] hover:shadow-md  ">
+
+                          <svg class="inline-flex mr-1 -mt-1" width="1em" height="0.9375em" viewBox="0 0 16 15"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <mask id="icon-settings-a" fill="#fff">
+                              <path fill-rule="evenodd"
+                                d="M.5 6.666v1.32c0 .779.637 1.424 1.424 1.424 1.357 0 1.912.96 1.23 2.136a1.424 1.424 0 0 0 .524 1.942l1.297.742a1.251 1.251 0 0 0 1.71-.45l.082-.143c.682-1.176 1.791-1.176 2.466 0l.083.143a1.251 1.251 0 0 0 1.709.45l1.296-.742c.683-.39.915-1.26.525-1.942-.682-1.177-.127-2.136 1.23-2.136.787 0 1.424-.645 1.424-1.425V6.666c0-.787-.645-1.424-1.424-1.424-1.357 0-1.912-.96-1.23-2.137a1.424 1.424 0 0 0-.524-1.941L11.024.422a1.251 1.251 0 0 0-1.71.45l-.082.142c-.682 1.177-1.792 1.177-2.466 0L6.684.87a1.251 1.251 0 0 0-1.709-.45l-1.297.743a1.424 1.424 0 0 0-.524 1.941c.682 1.177.127 2.137-1.23 2.137C1.137 5.242.5 5.886.5 6.666ZM8 9.18A1.854 1.854 0 1 1 8 5.47 1.854 1.854 0 0 1 8 9.18ZM5.02 7.326a2.98 2.98 0 1 1 5.96 0 2.98 2.98 0 0 1-5.96 0Z"
+                                clip-rule="evenodd"></path>
+                            </mask>
+                            <path fill="currentColor" fill-rule="evenodd"
+                              d="M.5 6.666v1.32c0 .779.637 1.424 1.424 1.424 1.357 0 1.912.96 1.23 2.136a1.424 1.424 0 0 0 .524 1.942l1.297.742a1.251 1.251 0 0 0 1.71-.45l.082-.143c.682-1.176 1.791-1.176 2.466 0l.083.143a1.251 1.251 0 0 0 1.709.45l1.296-.742c.683-.39.915-1.26.525-1.942-.682-1.177-.127-2.136 1.23-2.136.787 0 1.424-.645 1.424-1.425V6.666c0-.787-.645-1.424-1.424-1.424-1.357 0-1.912-.96-1.23-2.137a1.424 1.424 0 0 0-.524-1.941L11.024.422a1.251 1.251 0 0 0-1.71.45l-.082.142c-.682 1.177-1.792 1.177-2.466 0L6.684.87a1.251 1.251 0 0 0-1.709-.45l-1.297.743a1.424 1.424 0 0 0-.524 1.941c.682 1.177.127 2.137-1.23 2.137C1.137 5.242.5 5.886.5 6.666ZM8 9.18A1.854 1.854 0 1 1 8 5.47 1.854 1.854 0 0 1 8 9.18ZM5.02 7.326a2.98 2.98 0 1 1 5.96 0 2.98 2.98 0 0 1-5.96 0Z"
+                              clip-rule="evenodd"></path>
+                            <path fill="currentColor"
+                              d="m3.154 11.546-.974-.564v.001l.974.563Zm.524 1.942.56-.977h-.001l-.559.977Zm1.297.742.575-.967a.61.61 0 0 0-.016-.01l-.559.977Zm1.71-.45.966.575.007-.011-.974-.564Zm.082-.143-.974-.564.974.564Zm2.466 0-.976.56.002.004.974-.564Zm.083.143-.974.564.007.011.967-.575Zm1.709.45-.56-.977a.54.54 0 0 0-.015.01l.575.967Zm1.296-.742-.558-.977.559.977Zm.525-1.942.977-.558-.003-.006-.974.564Zm0-8.44.974.563-.974-.564Zm-.524-1.942-.56.976h.001l.559-.976ZM11.024.422l-.575.966a.94.94 0 0 0 .016.01l.559-.976Zm-1.71.45L8.35.295l-.007.012.974.563Zm-.082.142.973.564-.973-.564Zm-2.466 0 .976-.56L7.74.45l-.973.564ZM6.684.87l.974-.563-.007-.012-.967.575ZM4.975.421l.559.977.016-.01-.575-.966Zm-1.297.743.559.976-.559-.976Zm-.524 1.941-.974.563v.001l.974-.564Zm-1.53 4.88V6.666h-2.25v1.32h2.25Zm.3.3a.304.304 0 0 1-.3-.3h-2.25a2.553 2.553 0 0 0 2.55 2.55v-2.25Zm2.203 3.825c.461-.795.645-1.778.151-2.635-.493-.857-1.436-1.19-2.354-1.19v2.25c.211 0 .331.037.385.062.048.023.037.03.02.001-.017-.03-.005-.035-.01.018a.942.942 0 0 1-.139.366l1.947 1.128Zm.11.4a.299.299 0 0 1-.11-.401L2.18 10.983a2.549 2.549 0 0 0 .94 3.481l1.117-1.953Zm1.297.743-1.297-.742-1.117 1.953 1.296.742 1.118-1.953Zm.184-.048a.145.145 0 0 1-.088.067.098.098 0 0 1-.08-.01L4.4 15.197c1.148.683 2.594.264 3.251-.84l-1.933-1.151Zm.075-.131-.082.142 1.947 1.128.082-.143-1.947-1.127Zm4.416.004c-.457-.798-1.217-1.448-2.206-1.448-.988 0-1.749.648-2.21 1.443l1.947 1.129c.106-.184.2-.27.25-.304.044-.031.046-.018.013-.018-.034 0-.033-.014.01.016a.93.93 0 0 1 .244.301l1.952-1.119Zm.08.138-.082-.142L8.259 14.2l.083.143 1.947-1.128Zm.16.047a.098.098 0 0 1-.079.009.145.145 0 0 1-.088-.067l-1.933 1.15c.657 1.104 2.103 1.524 3.25.841l-1.15-1.933Zm1.314-.752-1.297.742 1.117 1.953 1.297-.742-1.117-1.953Zm.107-.407a.297.297 0 0 1-.107.407l1.117 1.953a2.547 2.547 0 0 0 .943-3.476l-1.954 1.116Zm2.206-3.82c-.918 0-1.86.334-2.354 1.19-.494.857-.31 1.84.15 2.636l1.948-1.128a.943.943 0 0 1-.14-.366c-.004-.053.008-.047-.009-.018-.017.03-.028.022.02 0a.937.937 0 0 1 .385-.063v-2.25Zm.299-.299c0 .162-.137.3-.3.3v2.25a2.553 2.553 0 0 0 2.55-2.55h-2.25Zm0-1.319v1.32h2.25v-1.32h-2.25Zm-.3-.3c.163 0 .3.138.3.3h2.25a2.553 2.553 0 0 0-2.55-2.55v2.25Zm-2.202-3.825c-.461.796-.645 1.779-.151 2.636.493.856 1.436 1.19 2.354 1.19v-2.25a.938.938 0 0 1-.385-.063c-.048-.022-.037-.03-.02 0 .017.028.005.034.01-.019a.943.943 0 0 1 .139-.366l-1.947-1.128Zm-.11-.4a.299.299 0 0 1 .11.401l1.947 1.126c.7-1.212.286-2.78-.94-3.481L11.763 2.14Zm-1.297-.743 1.297.742L12.88.187l-1.297-.742-1.117 1.953Zm-.184.049a.145.145 0 0 1 .088-.068.098.098 0 0 1 .08.01L11.6-.546c-1.148-.683-2.594-.263-3.251.841l1.933 1.15Zm-.075.13.082-.142L8.342.308 8.259.45l1.948 1.127ZM5.79 1.573c.457.798 1.217 1.448 2.206 1.448.988 0 1.748-.648 2.21-1.443L8.26.45a.948.948 0 0 1-.25.304c-.044.03-.046.017-.013.017.034 0 .033.014-.01-.016a.93.93 0 0 1-.244-.3L5.79 1.572Zm-.08-.138.082.142L7.74.45 7.658.308 5.71 1.435Zm-.16-.047a.098.098 0 0 1 .079-.009c.035.01.066.032.088.068L7.65.297C6.994-.809 5.548-1.229 4.4-.546l1.15 1.933Zm-1.314.752 1.297-.742L4.416-.555 3.12.187 4.237 2.14Zm-.11.402a.299.299 0 0 1 .11-.402L3.12.187a2.549 2.549 0 0 0-.94 3.481l1.948-1.126ZM1.925 6.367c.918 0 1.86-.334 2.354-1.19.494-.857.31-1.84-.151-2.636L2.18 3.67a.942.942 0 0 1 .14.366c.004.053-.008.047.009.018.017-.03.028-.021-.02 0a.938.938 0 0 1-.385.064v2.25Zm-.3.299c0-.162.138-.3.3-.3v-2.25a2.553 2.553 0 0 0-2.55 2.55h2.25Zm3.397.66A2.98 2.98 0 0 0 8 10.305v-2.25a.73.73 0 0 1-.73-.73H5.02ZM8 4.346a2.98 2.98 0 0 0-2.98 2.98h2.25a.73.73 0 0 1 .73-.73v-2.25Zm2.98 2.98A2.98 2.98 0 0 0 8 4.346v2.25a.73.73 0 0 1 .73.73h2.25ZM8 10.305a2.98 2.98 0 0 0 2.98-2.98H8.73a.73.73 0 0 1-.73.73v2.25ZM8 3.22a4.104 4.104 0 0 0-4.104 4.105h2.25c0-1.024.83-1.855 1.854-1.855v-2.25Zm4.104 4.105A4.104 4.104 0 0 0 8 3.22v2.25c1.024 0 1.854.83 1.854 1.855h2.25ZM8 11.43a4.104 4.104 0 0 0 4.104-4.104h-2.25C9.854 8.35 9.024 9.18 8 9.18v2.25ZM3.896 7.326A4.104 4.104 0 0 0 8 11.43V9.18a1.854 1.854 0 0 1-1.854-1.854h-2.25Z"
+                              mask="url(#icon-settings-a)"></path>
+                          </svg>
+                          Profile Settings
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </span>
+
+            </div> -->
+ </div>
+          <span class="ml-6 text-gray-400">DEM-23</span>
+          <hr>
+          <div class="mt-5 flex items-center w-100  bg-white mb-2 justify-between ">
+             <div class="flex items-center justify-center gap-2">
+              <input type="checkbox"
+                class="defaultCheckbox relative  h-[20px] min-h-[20px] w-[20px] min-w-[20px] ml-1 appearance-none items-center bg-gray-200
+                justify-center rounded-md  border-gray-600 text-white/0 outline-none transition duration-[0.2s]
+                checked:border-none checked:text-white hover:cursor-pointer checked:bg-brand-200 dark:checked:bg-[#57b6af]" name="weekly" />
+              <p class="text-base font-bold text-black dark:text-[#4b4b4b]">
+                Landing Page Design
+              </p><span class="ml-[350px]">
+                <div class="dropdown inline-block relative ">
+                  <button class=" font-semibold py-2 px-4 rounded inline-flex items-center">
+                    <Span
+                      class="items-center font-bold inline-flex text-white align-middle bg-[#ffc107] border-[#f9a33ad9] h-6 w-6 pl-2 rounded-md text-[9px] ">MI<Span>
+                        <span
+                          class="h-2 m-0 absolute w-2 1 border border-white bg-green-500 rounded-full top-6 right-3"></span>
+                  </button>
+                  <ul
+                    class="dropdown-menu absolute hidden text-gray-700  bg-white right-0 min-w-[294px] h-[305px] border  ">
+                    <div class=" flex">
+                      <Span
+                        class="items-center font-bold inline-flex text-white align-middle bg-[#ffc107] border-[#f9a33ad9] h-16 w-16 pl-5 pb-1 rounded-md ml-5 mt-4 text-xl">MI
+                      </Span>
+                      <div class="text-[#8e94bb] text-base font-medium inline-flex flex-col ml-24 absolute mt-3">
+                        <h5 class="">M.Ibrahim</h5>
+                        <span
+                          class="h-2 m-0 absolute w-2 border border-white bg-green-500 rounded-full -right-3"></span>
+                        <h6 class=" opacity-60 font-semibold text-xs uppercase mb-2">Owner</h6>
+                        <button class=" border border-[#363c5b] text-[#7c88c7]   px-1 flex  text-sm  w-12 rounded ">
+                          <svg class="mr-1 mt-1 " width="12px" height="12px" viewBox="0 0 12 12" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.66667 0.666569C6.66667 0.296631 6.36819 0 6 0C5.62924 0 5.33333 0.298433 5.33333 0.666569V5.33333H0.666569C0.296631 5.33333 0 5.63181 0 6C0 6.37076 0.298433 6.66667 0.666569 6.66667H5.33333V11.3334C5.33333 11.7034 5.63181 12 6 12C6.37076 12 6.66667 11.7016 6.66667 11.3334V6.66667H11.3334C11.7034 6.66667 12 6.36819 12 6C12 5.62924 11.7016 5.33333 11.3334 5.33333H6.66667V0.666569Z"
+                              fill="currentColor"></path>
+                          </svg> Tag
+                        </button>
+                      </div>
+                    </div>
+                    <div class="pt-0 px-4 pb-3 flex-col mt-7 hover:text-[#009084]  ">
+                      <button
+                        class="min-w-full px-0 bg-white border border-[#e8e8e8] py-2 rounded-md font-semibold hover:shadow-md">Set
+                        yourself as
+                        <span class="font-bold">Away</span></button>
+                    </div>
+                    <hr>
+                    <div class="bg-[#fafbfd] h-[140px] w-full py-3 px-4">
+                      <div class="text-xs mb-1 text-[#8e94bb] font-medium ">
+                        <i class="fa-solid fa-envelope  mr-1 text-xs" style="color: #8e94bb;"></i>
+                        M.Ibrahim122@gmail.com
+                      </div>
+                      <div class="text-xs mb-1 text-[#8e94bb] font-medium ">
+                        <i class="fa-regular fa-clock fa-fw" style="color: #8e94bb;"></i>
+                        <span>
+                          <time>11:42AM</time>
+                          &nbsp; (local time)
+                        </span>
+                      </div>
+                      <div class="flex mt-3 -mx-1">
+                        <button
+                          class="px-1 w-2/4 flex-auto bg-white border border-[#e8e8e8] h-8 text-sm items-center rounded-md font-semibold hover:text-[#009084] hover:shadow-md ">
+                          <svg class="inline-flex mr-1 -mt-1" width="1em" height="1em" viewBox="0 0 10 10" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g id="Team-overview---search" transform="translate(-195.000000, -181.000000)"
+                                fill="currentColor">
+                                <g id="Group-2" transform="translate(121.000000, 153.000000)">
+                                  <path
+                                    d="M75,35.4952421 L75,36.17338 C75.1749893,36.2801701 76.5730894,36.9985151 78.9999999,36.9985149 C81.4269104,36.9985146 82.8251939,36.2809335 83,36.1742018 L83,35.4952421 C83,34.6371765 81.0964783,33.9698598 80.9607895,33.9187773 C80.5350099,34.6829256 79.905538,35.2499999 79,35.25 C78.0949419,35.2500001 77.4656574,34.6835268 77.0398876,33.9199923 C76.9055757,33.9704691 75,34.635437 75,35.4952421 Z M76.25,30.5893243 C76.25,29.15928 77.4812169,28 79,28 C80.5187831,28 81.75,29.15928 81.75,30.5893243 C81.75,31.1961664 81.6440039,32.1272483 81.3568094,32.9981097 C82.3582639,33.3806945 84,34.0003662 84,35.4952421 L84,36.4988173 C84,37.0513451 81.8424683,37.9999997 79,38 C76.1575317,38.0000003 74,37.0494601 74,36.4988173 L74,35.4952421 C74,33.9952087 75.642655,33.3812319 76.6436151,32.9993966 C76.3561006,32.1281657 76.25,31.1964653 76.25,30.5893243 Z M78.9999998,34.25 C79.9847893,34.2499998 80.75,32.4413168 80.75,30.5893243 C80.75,29.7254728 79.9795093,29 79,29 C78.0204907,29 77.25,29.7254728 77.25,30.5893243 C77.25,32.4413169 78.0152107,34.2500002 78.9999998,34.25 Z"
+                                    id="Combined-Shape"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg> See profile
+                        </button>
+                      </div>
+                      <div class="flex mt-3 -mx-1">
+                        <button
+                          class="px-1 w-2/4 flex-auto bg-white border border-[#e8e8e8] h-8 text-sm items-center rounded-md font-semibold hover:text-[#009084] hover:shadow-md  ">
+
+                          <svg class="inline-flex mr-1 -mt-1" width="1em" height="0.9375em" viewBox="0 0 16 15"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <mask id="icon-settings-a" fill="#fff">
+                              <path fill-rule="evenodd"
+                                d="M.5 6.666v1.32c0 .779.637 1.424 1.424 1.424 1.357 0 1.912.96 1.23 2.136a1.424 1.424 0 0 0 .524 1.942l1.297.742a1.251 1.251 0 0 0 1.71-.45l.082-.143c.682-1.176 1.791-1.176 2.466 0l.083.143a1.251 1.251 0 0 0 1.709.45l1.296-.742c.683-.39.915-1.26.525-1.942-.682-1.177-.127-2.136 1.23-2.136.787 0 1.424-.645 1.424-1.425V6.666c0-.787-.645-1.424-1.424-1.424-1.357 0-1.912-.96-1.23-2.137a1.424 1.424 0 0 0-.524-1.941L11.024.422a1.251 1.251 0 0 0-1.71.45l-.082.142c-.682 1.177-1.792 1.177-2.466 0L6.684.87a1.251 1.251 0 0 0-1.709-.45l-1.297.743a1.424 1.424 0 0 0-.524 1.941c.682 1.177.127 2.137-1.23 2.137C1.137 5.242.5 5.886.5 6.666ZM8 9.18A1.854 1.854 0 1 1 8 5.47 1.854 1.854 0 0 1 8 9.18ZM5.02 7.326a2.98 2.98 0 1 1 5.96 0 2.98 2.98 0 0 1-5.96 0Z"
+                                clip-rule="evenodd"></path>
+                            </mask>
+                            <path fill="currentColor" fill-rule="evenodd"
+                              d="M.5 6.666v1.32c0 .779.637 1.424 1.424 1.424 1.357 0 1.912.96 1.23 2.136a1.424 1.424 0 0 0 .524 1.942l1.297.742a1.251 1.251 0 0 0 1.71-.45l.082-.143c.682-1.176 1.791-1.176 2.466 0l.083.143a1.251 1.251 0 0 0 1.709.45l1.296-.742c.683-.39.915-1.26.525-1.942-.682-1.177-.127-2.136 1.23-2.136.787 0 1.424-.645 1.424-1.425V6.666c0-.787-.645-1.424-1.424-1.424-1.357 0-1.912-.96-1.23-2.137a1.424 1.424 0 0 0-.524-1.941L11.024.422a1.251 1.251 0 0 0-1.71.45l-.082.142c-.682 1.177-1.792 1.177-2.466 0L6.684.87a1.251 1.251 0 0 0-1.709-.45l-1.297.743a1.424 1.424 0 0 0-.524 1.941c.682 1.177.127 2.137-1.23 2.137C1.137 5.242.5 5.886.5 6.666ZM8 9.18A1.854 1.854 0 1 1 8 5.47 1.854 1.854 0 0 1 8 9.18ZM5.02 7.326a2.98 2.98 0 1 1 5.96 0 2.98 2.98 0 0 1-5.96 0Z"
+                              clip-rule="evenodd"></path>
+                            <path fill="currentColor"
+                              d="m3.154 11.546-.974-.564v.001l.974.563Zm.524 1.942.56-.977h-.001l-.559.977Zm1.297.742.575-.967a.61.61 0 0 0-.016-.01l-.559.977Zm1.71-.45.966.575.007-.011-.974-.564Zm.082-.143-.974-.564.974.564Zm2.466 0-.976.56.002.004.974-.564Zm.083.143-.974.564.007.011.967-.575Zm1.709.45-.56-.977a.54.54 0 0 0-.015.01l.575.967Zm1.296-.742-.558-.977.559.977Zm.525-1.942.977-.558-.003-.006-.974.564Zm0-8.44.974.563-.974-.564Zm-.524-1.942-.56.976h.001l.559-.976ZM11.024.422l-.575.966a.94.94 0 0 0 .016.01l.559-.976Zm-1.71.45L8.35.295l-.007.012.974.563Zm-.082.142.973.564-.973-.564Zm-2.466 0 .976-.56L7.74.45l-.973.564ZM6.684.87l.974-.563-.007-.012-.967.575ZM4.975.421l.559.977.016-.01-.575-.966Zm-1.297.743.559.976-.559-.976Zm-.524 1.941-.974.563v.001l.974-.564Zm-1.53 4.88V6.666h-2.25v1.32h2.25Zm.3.3a.304.304 0 0 1-.3-.3h-2.25a2.553 2.553 0 0 0 2.55 2.55v-2.25Zm2.203 3.825c.461-.795.645-1.778.151-2.635-.493-.857-1.436-1.19-2.354-1.19v2.25c.211 0 .331.037.385.062.048.023.037.03.02.001-.017-.03-.005-.035-.01.018a.942.942 0 0 1-.139.366l1.947 1.128Zm.11.4a.299.299 0 0 1-.11-.401L2.18 10.983a2.549 2.549 0 0 0 .94 3.481l1.117-1.953Zm1.297.743-1.297-.742-1.117 1.953 1.296.742 1.118-1.953Zm.184-.048a.145.145 0 0 1-.088.067.098.098 0 0 1-.08-.01L4.4 15.197c1.148.683 2.594.264 3.251-.84l-1.933-1.151Zm.075-.131-.082.142 1.947 1.128.082-.143-1.947-1.127Zm4.416.004c-.457-.798-1.217-1.448-2.206-1.448-.988 0-1.749.648-2.21 1.443l1.947 1.129c.106-.184.2-.27.25-.304.044-.031.046-.018.013-.018-.034 0-.033-.014.01.016a.93.93 0 0 1 .244.301l1.952-1.119Zm.08.138-.082-.142L8.259 14.2l.083.143 1.947-1.128Zm.16.047a.098.098 0 0 1-.079.009.145.145 0 0 1-.088-.067l-1.933 1.15c.657 1.104 2.103 1.524 3.25.841l-1.15-1.933Zm1.314-.752-1.297.742 1.117 1.953 1.297-.742-1.117-1.953Zm.107-.407a.297.297 0 0 1-.107.407l1.117 1.953a2.547 2.547 0 0 0 .943-3.476l-1.954 1.116Zm2.206-3.82c-.918 0-1.86.334-2.354 1.19-.494.857-.31 1.84.15 2.636l1.948-1.128a.943.943 0 0 1-.14-.366c-.004-.053.008-.047-.009-.018-.017.03-.028.022.02 0a.937.937 0 0 1 .385-.063v-2.25Zm.299-.299c0 .162-.137.3-.3.3v2.25a2.553 2.553 0 0 0 2.55-2.55h-2.25Zm0-1.319v1.32h2.25v-1.32h-2.25Zm-.3-.3c.163 0 .3.138.3.3h2.25a2.553 2.553 0 0 0-2.55-2.55v2.25Zm-2.202-3.825c-.461.796-.645 1.779-.151 2.636.493.856 1.436 1.19 2.354 1.19v-2.25a.938.938 0 0 1-.385-.063c-.048-.022-.037-.03-.02 0 .017.028.005.034.01-.019a.943.943 0 0 1 .139-.366l-1.947-1.128Zm-.11-.4a.299.299 0 0 1 .11.401l1.947 1.126c.7-1.212.286-2.78-.94-3.481L11.763 2.14Zm-1.297-.743 1.297.742L12.88.187l-1.297-.742-1.117 1.953Zm-.184.049a.145.145 0 0 1 .088-.068.098.098 0 0 1 .08.01L11.6-.546c-1.148-.683-2.594-.263-3.251.841l1.933 1.15Zm-.075.13.082-.142L8.342.308 8.259.45l1.948 1.127ZM5.79 1.573c.457.798 1.217 1.448 2.206 1.448.988 0 1.748-.648 2.21-1.443L8.26.45a.948.948 0 0 1-.25.304c-.044.03-.046.017-.013.017.034 0 .033.014-.01-.016a.93.93 0 0 1-.244-.3L5.79 1.572Zm-.08-.138.082.142L7.74.45 7.658.308 5.71 1.435Zm-.16-.047a.098.098 0 0 1 .079-.009c.035.01.066.032.088.068L7.65.297C6.994-.809 5.548-1.229 4.4-.546l1.15 1.933Zm-1.314.752 1.297-.742L4.416-.555 3.12.187 4.237 2.14Zm-.11.402a.299.299 0 0 1 .11-.402L3.12.187a2.549 2.549 0 0 0-.94 3.481l1.948-1.126ZM1.925 6.367c.918 0 1.86-.334 2.354-1.19.494-.857.31-1.84-.151-2.636L2.18 3.67a.942.942 0 0 1 .14.366c.004.053-.008.047.009.018.017-.03.028-.021-.02 0a.938.938 0 0 1-.385.064v2.25Zm-.3.299c0-.162.138-.3.3-.3v-2.25a2.553 2.553 0 0 0-2.55 2.55h2.25Zm3.397.66A2.98 2.98 0 0 0 8 10.305v-2.25a.73.73 0 0 1-.73-.73H5.02ZM8 4.346a2.98 2.98 0 0 0-2.98 2.98h2.25a.73.73 0 0 1 .73-.73v-2.25Zm2.98 2.98A2.98 2.98 0 0 0 8 4.346v2.25a.73.73 0 0 1 .73.73h2.25ZM8 10.305a2.98 2.98 0 0 0 2.98-2.98H8.73a.73.73 0 0 1-.73.73v2.25ZM8 3.22a4.104 4.104 0 0 0-4.104 4.105h2.25c0-1.024.83-1.855 1.854-1.855v-2.25Zm4.104 4.105A4.104 4.104 0 0 0 8 3.22v2.25c1.024 0 1.854.83 1.854 1.855h2.25ZM8 11.43a4.104 4.104 0 0 0 4.104-4.104h-2.25C9.854 8.35 9.024 9.18 8 9.18v2.25ZM3.896 7.326A4.104 4.104 0 0 0 8 11.43V9.18a1.854 1.854 0 0 1-1.854-1.854h-2.25Z"
+                              mask="url(#icon-settings-a)"></path>
+                          </svg> Profile Settings
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </span>
+            </div>
+          </div>
+          <span class="ml-6 text-gray-400">DEM-24</span>
+          <hr>
+          <div class="mt-5 flex items-center w-100  bg-white mb-2 justify-between ">
+            <div class="flex items-center justify-center gap-2">
+              <input type="checkbox"
+                class="defaultCheckbox relative  h-[20px] min-h-[20px] w-[20px] min-w-[20px] ml-1 appearance-none items-center bg-gray-200
+                  justify-center rounded-md  border-gray-600 text-white/0 outline-none transition duration-[0.2s]
+                  checked:border-none checked:text-white hover:cursor-pointer checked:bg-brand-200 dark:checked:bg-[#57b6af]"
+                name="weekly" />
+              <p class="text-base font-bold text-black dark:text-[#4b4b4b]">
+                Landing Page Design
+              </p><span class="ml-[350px]">
+                <div class="dropdown inline-block relative ">
+                  <button class=" font-semibold py-2 px-4 rounded inline-flex items-center">
+                    <Span
+                      class="items-center font-bold inline-flex text-white align-middle bg-[#ffc107] border-[#f9a33ad9] h-6 w-6 pl-2 rounded-md text-[9px] ">MI<Span>
+                        <span
+                          class="h-2 m-0 absolute w-2 1 border border-white bg-green-500 rounded-full top-6 right-3"></span>
+                  </button>
+                  <ul 
+                    class="dropdown-menu absolute hidden text-gray-700  bg-white right-0 min-w-[294px] h-[305px] border  ">
+                    <div class=" flex">
+                      <Span
+                        class="items-center font-bold inline-flex text-white align-middle bg-[#ffc107] border-[#f9a33ad9] h-16 w-16 pl-5 pb-1 rounded-md ml-5 mt-4 text-xl">MI
+                      </Span>
+                      <div class="text-[#8e94bb] text-base font-medium inline-flex flex-col ml-24 absolute mt-3">
+                        <h5 class="">M.Ibrahim</h5>
+                        <span
+                          class="h-2 m-0 absolute w-2 border border-white bg-green-500 rounded-full -right-3"></span>
+                        <h6 class=" opacity-60 font-semibold text-xs uppercase mb-2">Owner</h6>
+                        <button class=" border border-[#363c5b] text-[#7c88c7]   px-1 flex  text-sm  w-12 rounded ">
+                          <svg class="mr-1 mt-1 " width="12px" height="12px" viewBox="0 0 12 12" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M6.66667 0.666569C6.66667 0.296631 6.36819 0 6 0C5.62924 0 5.33333 0.298433 5.33333 0.666569V5.33333H0.666569C0.296631 5.33333 0 5.63181 0 6C0 6.37076 0.298433 6.66667 0.666569 6.66667H5.33333V11.3334C5.33333 11.7034 5.63181 12 6 12C6.37076 12 6.66667 11.7016 6.66667 11.3334V6.66667H11.3334C11.7034 6.66667 12 6.36819 12 6C12 5.62924 11.7016 5.33333 11.3334 5.33333H6.66667V0.666569Z"
+                              fill="currentColor"></path>
+                          </svg> Tag
+                        </button>
+                      </div>
+
+                    </div>
+                    <div class="pt-0 px-4 pb-3 flex-col mt-7 hover:text-[#009084]  ">
+                      <button
+                        class="min-w-full px-0 bg-white border border-[#e8e8e8] py-2 rounded-md font-semibold hover:shadow-md">Set
+                        yourself as
+                        <span class="font-bold">Away</span></button>
+                    </div>
+                    <hr>
+                    <div class="bg-[#fafbfd] h-[140px] w-full py-3 px-4">
+                      <div class="text-xs mb-1 text-[#8e94bb] font-medium ">
+                        <i class="fa-solid fa-envelope  mr-1 text-xs" style="color: #8e94bb;"></i>
+                        M.Ibrahim122@gmail.com
+                      </div>
+                      <div class="text-xs mb-1 text-[#8e94bb] font-medium ">
+                        <i class="fa-regular fa-clock fa-fw" style="color: #8e94bb;"></i>
+                        <span>
+                          <time>11:42AM</time>
+                          &nbsp; (local time)
+                        </span>
+                      </div>
+                      <div class="flex mt-3 -mx-1">
+                        <button
+                          class="px-1 w-2/4 flex-auto bg-white border border-[#e8e8e8] h-8 text-sm items-center rounded-md font-semibold hover:text-[#009084] hover:shadow-md ">
+                          <svg class="inline-flex mr-1 -mt-1" width="1em" height="1em" viewBox="0 0 10 10" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g id="Team-overview---search" transform="translate(-195.000000, -181.000000)"
+                                fill="currentColor">
+                                <g id="Group-2" transform="translate(121.000000, 153.000000)">
+                                  <path
+                                    d="M75,35.4952421 L75,36.17338 C75.1749893,36.2801701 76.5730894,36.9985151 78.9999999,36.9985149 C81.4269104,36.9985146 82.8251939,36.2809335 83,36.1742018 L83,35.4952421 C83,34.6371765 81.0964783,33.9698598 80.9607895,33.9187773 C80.5350099,34.6829256 79.905538,35.2499999 79,35.25 C78.0949419,35.2500001 77.4656574,34.6835268 77.0398876,33.9199923 C76.9055757,33.9704691 75,34.635437 75,35.4952421 Z M76.25,30.5893243 C76.25,29.15928 77.4812169,28 79,28 C80.5187831,28 81.75,29.15928 81.75,30.5893243 C81.75,31.1961664 81.6440039,32.1272483 81.3568094,32.9981097 C82.3582639,33.3806945 84,34.0003662 84,35.4952421 L84,36.4988173 C84,37.0513451 81.8424683,37.9999997 79,38 C76.1575317,38.0000003 74,37.0494601 74,36.4988173 L74,35.4952421 C74,33.9952087 75.642655,33.3812319 76.6436151,32.9993966 C76.3561006,32.1281657 76.25,31.1964653 76.25,30.5893243 Z M78.9999998,34.25 C79.9847893,34.2499998 80.75,32.4413168 80.75,30.5893243 C80.75,29.7254728 79.9795093,29 79,29 C78.0204907,29 77.25,29.7254728 77.25,30.5893243 C77.25,32.4413169 78.0152107,34.2500002 78.9999998,34.25 Z"
+                                    id="Combined-Shape"></path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                          See profile
+                        </button>
+                      </div>
+                      <div class="flex mt-3 -mx-1">
+                        <button
+                          class="px-1 w-2/4 flex-auto bg-white border border-[#e8e8e8] h-8 text-sm items-center rounded-md font-semibold hover:text-[#009084] hover:shadow-md  ">
+
+                          <svg class="inline-flex mr-1 -mt-1" width="1em" height="0.9375em" viewBox="0 0 16 15"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg" fill="none">
+                            <mask id="icon-settings-a" fill="#fff">
+                              <path fill-rule="evenodd"
+                                d="M.5 6.666v1.32c0 .779.637 1.424 1.424 1.424 1.357 0 1.912.96 1.23 2.136a1.424 1.424 0 0 0 .524 1.942l1.297.742a1.251 1.251 0 0 0 1.71-.45l.082-.143c.682-1.176 1.791-1.176 2.466 0l.083.143a1.251 1.251 0 0 0 1.709.45l1.296-.742c.683-.39.915-1.26.525-1.942-.682-1.177-.127-2.136 1.23-2.136.787 0 1.424-.645 1.424-1.425V6.666c0-.787-.645-1.424-1.424-1.424-1.357 0-1.912-.96-1.23-2.137a1.424 1.424 0 0 0-.524-1.941L11.024.422a1.251 1.251 0 0 0-1.71.45l-.082.142c-.682 1.177-1.792 1.177-2.466 0L6.684.87a1.251 1.251 0 0 0-1.709-.45l-1.297.743a1.424 1.424 0 0 0-.524 1.941c.682 1.177.127 2.137-1.23 2.137C1.137 5.242.5 5.886.5 6.666ZM8 9.18A1.854 1.854 0 1 1 8 5.47 1.854 1.854 0 0 1 8 9.18ZM5.02 7.326a2.98 2.98 0 1 1 5.96 0 2.98 2.98 0 0 1-5.96 0Z"
+                                clip-rule="evenodd"></path>
+                            </mask>
+                            <path fill="currentColor" fill-rule="evenodd"
+                              d="M.5 6.666v1.32c0 .779.637 1.424 1.424 1.424 1.357 0 1.912.96 1.23 2.136a1.424 1.424 0 0 0 .524 1.942l1.297.742a1.251 1.251 0 0 0 1.71-.45l.082-.143c.682-1.176 1.791-1.176 2.466 0l.083.143a1.251 1.251 0 0 0 1.709.45l1.296-.742c.683-.39.915-1.26.525-1.942-.682-1.177-.127-2.136 1.23-2.136.787 0 1.424-.645 1.424-1.425V6.666c0-.787-.645-1.424-1.424-1.424-1.357 0-1.912-.96-1.23-2.137a1.424 1.424 0 0 0-.524-1.941L11.024.422a1.251 1.251 0 0 0-1.71.45l-.082.142c-.682 1.177-1.792 1.177-2.466 0L6.684.87a1.251 1.251 0 0 0-1.709-.45l-1.297.743a1.424 1.424 0 0 0-.524 1.941c.682 1.177.127 2.137-1.23 2.137C1.137 5.242.5 5.886.5 6.666ZM8 9.18A1.854 1.854 0 1 1 8 5.47 1.854 1.854 0 0 1 8 9.18ZM5.02 7.326a2.98 2.98 0 1 1 5.96 0 2.98 2.98 0 0 1-5.96 0Z"
+                              clip-rule="evenodd"></path>
+                            <path fill="currentColor"
+                              d="m3.154 11.546-.974-.564v.001l.974.563Zm.524 1.942.56-.977h-.001l-.559.977Zm1.297.742.575-.967a.61.61 0 0 0-.016-.01l-.559.977Zm1.71-.45.966.575.007-.011-.974-.564Zm.082-.143-.974-.564.974.564Zm2.466 0-.976.56.002.004.974-.564Zm.083.143-.974.564.007.011.967-.575Zm1.709.45-.56-.977a.54.54 0 0 0-.015.01l.575.967Zm1.296-.742-.558-.977.559.977Zm.525-1.942.977-.558-.003-.006-.974.564Zm0-8.44.974.563-.974-.564Zm-.524-1.942-.56.976h.001l.559-.976ZM11.024.422l-.575.966a.94.94 0 0 0 .016.01l.559-.976Zm-1.71.45L8.35.295l-.007.012.974.563Zm-.082.142.973.564-.973-.564Zm-2.466 0 .976-.56L7.74.45l-.973.564ZM6.684.87l.974-.563-.007-.012-.967.575ZM4.975.421l.559.977.016-.01-.575-.966Zm-1.297.743.559.976-.559-.976Zm-.524 1.941-.974.563v.001l.974-.564Zm-1.53 4.88V6.666h-2.25v1.32h2.25Zm.3.3a.304.304 0 0 1-.3-.3h-2.25a2.553 2.553 0 0 0 2.55 2.55v-2.25Zm2.203 3.825c.461-.795.645-1.778.151-2.635-.493-.857-1.436-1.19-2.354-1.19v2.25c.211 0 .331.037.385.062.048.023.037.03.02.001-.017-.03-.005-.035-.01.018a.942.942 0 0 1-.139.366l1.947 1.128Zm.11.4a.299.299 0 0 1-.11-.401L2.18 10.983a2.549 2.549 0 0 0 .94 3.481l1.117-1.953Zm1.297.743-1.297-.742-1.117 1.953 1.296.742 1.118-1.953Zm.184-.048a.145.145 0 0 1-.088.067.098.098 0 0 1-.08-.01L4.4 15.197c1.148.683 2.594.264 3.251-.84l-1.933-1.151Zm.075-.131-.082.142 1.947 1.128.082-.143-1.947-1.127Zm4.416.004c-.457-.798-1.217-1.448-2.206-1.448-.988 0-1.749.648-2.21 1.443l1.947 1.129c.106-.184.2-.27.25-.304.044-.031.046-.018.013-.018-.034 0-.033-.014.01.016a.93.93 0 0 1 .244.301l1.952-1.119Zm.08.138-.082-.142L8.259 14.2l.083.143 1.947-1.128Zm.16.047a.098.098 0 0 1-.079.009.145.145 0 0 1-.088-.067l-1.933 1.15c.657 1.104 2.103 1.524 3.25.841l-1.15-1.933Zm1.314-.752-1.297.742 1.117 1.953 1.297-.742-1.117-1.953Zm.107-.407a.297.297 0 0 1-.107.407l1.117 1.953a2.547 2.547 0 0 0 .943-3.476l-1.954 1.116Zm2.206-3.82c-.918 0-1.86.334-2.354 1.19-.494.857-.31 1.84.15 2.636l1.948-1.128a.943.943 0 0 1-.14-.366c-.004-.053.008-.047-.009-.018-.017.03-.028.022.02 0a.937.937 0 0 1 .385-.063v-2.25Zm.299-.299c0 .162-.137.3-.3.3v2.25a2.553 2.553 0 0 0 2.55-2.55h-2.25Zm0-1.319v1.32h2.25v-1.32h-2.25Zm-.3-.3c.163 0 .3.138.3.3h2.25a2.553 2.553 0 0 0-2.55-2.55v2.25Zm-2.202-3.825c-.461.796-.645 1.779-.151 2.636.493.856 1.436 1.19 2.354 1.19v-2.25a.938.938 0 0 1-.385-.063c-.048-.022-.037-.03-.02 0 .017.028.005.034.01-.019a.943.943 0 0 1 .139-.366l-1.947-1.128Zm-.11-.4a.299.299 0 0 1 .11.401l1.947 1.126c.7-1.212.286-2.78-.94-3.481L11.763 2.14Zm-1.297-.743 1.297.742L12.88.187l-1.297-.742-1.117 1.953Zm-.184.049a.145.145 0 0 1 .088-.068.098.098 0 0 1 .08.01L11.6-.546c-1.148-.683-2.594-.263-3.251.841l1.933 1.15Zm-.075.13.082-.142L8.342.308 8.259.45l1.948 1.127ZM5.79 1.573c.457.798 1.217 1.448 2.206 1.448.988 0 1.748-.648 2.21-1.443L8.26.45a.948.948 0 0 1-.25.304c-.044.03-.046.017-.013.017.034 0 .033.014-.01-.016a.93.93 0 0 1-.244-.3L5.79 1.572Zm-.08-.138.082.142L7.74.45 7.658.308 5.71 1.435Zm-.16-.047a.098.098 0 0 1 .079-.009c.035.01.066.032.088.068L7.65.297C6.994-.809 5.548-1.229 4.4-.546l1.15 1.933Zm-1.314.752 1.297-.742L4.416-.555 3.12.187 4.237 2.14Zm-.11.402a.299.299 0 0 1 .11-.402L3.12.187a2.549 2.549 0 0 0-.94 3.481l1.948-1.126ZM1.925 6.367c.918 0 1.86-.334 2.354-1.19.494-.857.31-1.84-.151-2.636L2.18 3.67a.942.942 0 0 1 .14.366c.004.053-.008.047.009.018.017-.03.028-.021-.02 0a.938.938 0 0 1-.385.064v2.25Zm-.3.299c0-.162.138-.3.3-.3v-2.25a2.553 2.553 0 0 0-2.55 2.55h2.25Zm3.397.66A2.98 2.98 0 0 0 8 10.305v-2.25a.73.73 0 0 1-.73-.73H5.02ZM8 4.346a2.98 2.98 0 0 0-2.98 2.98h2.25a.73.73 0 0 1 .73-.73v-2.25Zm2.98 2.98A2.98 2.98 0 0 0 8 4.346v2.25a.73.73 0 0 1 .73.73h2.25ZM8 10.305a2.98 2.98 0 0 0 2.98-2.98H8.73a.73.73 0 0 1-.73.73v2.25ZM8 3.22a4.104 4.104 0 0 0-4.104 4.105h2.25c0-1.024.83-1.855 1.854-1.855v-2.25Zm4.104 4.105A4.104 4.104 0 0 0 8 3.22v2.25c1.024 0 1.854.83 1.854 1.855h2.25ZM8 11.43a4.104 4.104 0 0 0 4.104-4.104h-2.25C9.854 8.35 9.024 9.18 8 9.18v2.25ZM3.896 7.326A4.104 4.104 0 0 0 8 11.43V9.18a1.854 1.854 0 0 1-1.854-1.854h-2.25Z"
+                              mask="url(#icon-settings-a)"></path>
+                          </svg>
+                          Profile Settings
+                        </button>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
+              </span>
+            </div>
+          </div>
+          <span class="ml-6 text-gray-400">DEM-24</span>
+          <span class="ml-6 text-gray-400">DEM-25</span>
+          <hr>
+          <form class="">
+            <div class="flex items-center py-4 bg-white">
+              <textarea id="chat" rows="1" class=" mx-4 p-2.5 w-full  text-sm bg-white"
+                placeholder="Add a new task...."></textarea>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+<div class="flex mr-20">
+    <div class="mb-20 ">
+        <div class="flex justify-between border border-t-4 border-t-[#ff6650] bg-white rounded-lg p-4 ml-3  w-[800px] ">
+            <h3 class="text-md flex font-semibold"><span><svg class="icon relative top-[5px] right-2 cursor-pointer"
+                        width="1em" height="0.8125em" viewBox="0 0 16 13" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.564 3.125l-1.72-1.72a.75.75 0 0 1 1.061-1.06l3 3a.75.75 0 0 1 0 1.06l-3 3a.75.75 0 0 1-1.06-1.06l1.72-1.72H5.37a2.999 2.999 0 0 0-2.996 3v3.747a.75.75 0 1 1-1.5 0V7.625c0-2.485 2.013-4.5 4.496-4.5h7.193z"
+                            fill="#969bc0" fill-rule="evenodd"></path>
+                    </svg></span> Discussions <span><svg class="icon  relative top-[5px] left-3 cursor-pointer"
+                        width="0.5454545454545454em" height="1em" viewBox="0 0 6 11" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="Overview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Team-overview---profile---2" transform="translate(-1194.000000, -457.000000)"
+                                fill="#969bc0">
+                                <g id="Rectangle-4" transform="translate(232.000000, 30.000000)">
+                                    <g id="Group-41" transform="translate(35.000000, 278.000000)">
+                                        <g id="Group-40" transform="translate(0.000000, 72.000000)">
+                                            <g id="Group-36-Copy-3" transform="translate(900.000000, 22.000000)">
+                                                <path
+                                                    d="M32.8047379,56.1380712 C33.0650874,55.8777217 33.0650874,55.4556117 32.8047379,55.1952621 C32.5443883,54.9349126 32.1222783,54.9349126 31.8619288,55.1952621 L27.1952621,59.8619288 C26.9349126,60.1222783 26.9349126,60.5443883 27.1952621,60.8047379 L31.8619288,65.4714045 C32.1222783,65.731754 32.5443883,65.731754 32.8047379,65.4714045 C33.0650874,65.211055 33.0650874,64.788945 32.8047379,64.5285955 L28.6094757,60.3333333 L32.8047379,56.1380712 Z"
+                                                    id="Path-82"
+                                                    transform="translate(30.000000, 60.333333) scale(-1, 1) translate(-30.000000, -60.333333) ">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg></span></h3>
+            <span><button class="btn btn-transparent pr-2 text-md text-[#009084] font-semibold">(icon)</button><button
+                    class="btn widget-util-btn"><svg class="icon " width="0.875em" height="1em"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M448 56v95.005c0 21.382-25.851 32.09-40.971 16.971l-27.704-27.704-107.242 107.243c-4.686 4.686-12.284 4.686-16.971 0l-22.627-22.627c-4.686-4.686-4.686-12.284 0-16.971l107.243-107.243-27.704-27.704C296.905 57.851 307.613 32 328.995 32H424c13.255 0 24 10.745 24 24zM175.917 264.485L68.674 371.728 40.97 344.024C25.851 328.905 0 339.613 0 360.995V456c0 13.255 10.745 24 24 24h95.005c21.382 0 32.09-25.851 16.971-40.971l-27.704-27.704 107.243-107.243c4.686-4.686 4.686-12.284 0-16.971l-22.627-22.627c-4.687-4.685-12.285-4.685-16.971.001z"
+                            fill="currentColor"></path>
+                    </svg></button></span>
+        </div>
+        <div
+            class="w-[800px]  flex  font-sans h-[400px] overflow-x-auto  ml-3 bg-white border border-gray-200 rounded-lg shadow  ">
+            <div class="w-[800px] relative">
+
+                <div class=" fixed w-[720px] left-9 bg-white">
+                    <div
+                        class="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
+                        <p class="mx-4 mb-0 text-center divder-text">OR</p>
+                    </div>
+                </div>
+
+
+                <div class="mb-4 p-6 mt-3 flex gap-3 "><span><button
+                            class=" font-semibold py-2  rounded inline-flex items-center pt-4">
+                            <span
+                                class="items-center font-bold flex text-white align-middle bg-[#ffc107] border-[#f9a33ad9] h-8 w-8 pl-2 rounded-md text-[12px] ">GJ<Span>
+                                    <span class="h-2 m-0 absolute rounded-full top-6 right-3"></span>
+                        </button></span>
+                    <div class="pt-4">
+                        <h2 class="font-semibold">Nifty <span class="text-gray-400">. 5:12PM</span></h2>
+                        <p class=""> Welcome to Nifty, Muhammad Ibrahim!
+                            You're now in the project discussions screen — a hub for all project members to share ideas,
+                            discuss
+                            progress, and find it all through our powerful search. Discussions aren't too useful without
+                            more of
+                            your workspace members, so</p>
+                    </div>
+
+                </div>
+     
+                <div class="mb-4 p-6 mt-3 flex gap-3 "><span><button
+                            class=" font-semibold py-2  rounded inline-flex items-center pt-4">
+                            <span
+                                class="items-center font-bold flex text-white align-middle bg-[#ffc107] border-[#f9a33ad9] h-8 w-8 pl-2 rounded-md text-[12px] ">GJ<Span>
+                                    <span class="h-2 m-0 absolute rounded-full top-6 right-3"></span>
+                        </button></span>
+                    <div class="pt-4">
+                        <h2 class="font-semibold">Nifty <span class="text-gray-400">. 5:12PM</span></h2>
+                        <img
+                        src="https://media0.giphy.com/media/3o7abAHdYvZdBNnGZq/giphy-downsized.gif" alt="gif"
+                        class="" width="220" height="250">
+                    </div>
+
+                </div>
+                <div class="mb-4 p-6 mt-3 flex gap-3 "><span><button
+                    class=" font-semibold py-2  rounded inline-flex items-center pt-4">
+                    <span
+                        class="items-center font-bold flex text-white align-middle bg-[#ffc107] border-[#f9a33ad9] h-8 w-8 pl-2 rounded-md text-[12px] ">GJ<Span>
+                            <span class="h-2 m-0 absolute rounded-full top-6 right-3"></span>
+                </button></span>
+            <div class="pt-4">
+                <h2 class="font-semibold">Nifty <span class="text-gray-400">. 5:12PM</span></h2>
+                <img src="https://media2.giphy.com/media/dMJSJ3EwUoFfAzIMGU/giphy-downsized.gif" alt="gif" width="140.625" height="250">
+            </div>
+
+        </div>
+        <div class="mb-4 p-6 mt-3 flex gap-3 "><span><button
+            class=" font-semibold py-2  rounded inline-flex items-center pt-4">
+            <span
+                class="items-center font-bold flex text-white align-middle bg-[#ffc107] border-[#f9a33ad9] h-8 w-8 pl-2 rounded-md text-[12px] ">GJ<Span>
+                    <span class="h-2 m-0 absolute rounded-full top-6 right-3"></span>
+        </button></span>
+    <div class="pt-4">
+        <h2 class="font-semibold">Nifty <span class="text-gray-400">. 5:12PM</span></h2>
+        <img src="https://media2.giphy.com/media/hZj44bR9FVI3K/giphy.gif" alt="gif" width="206.27062706270627" height="250">
+    </div>
+
+</div>
+                <div class="sticky bottom-0">
+                    <form>
+                    <div class="flex items-center py-1.5 px-4  ml-1 mr-1 g-gray-50 rounded-lg border dark:bg-white">
+                        <button type="button"
+                            class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
+                        </button>
+                        <button type="button"
+                            class="p-2 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                        <textarea id="chat" rows="1"
+                            class="block mx-4 p-2.5 w-full text-sm text-gray-300 bg-white rounded-lg border border-gray-300 focus:ring-[#02b9a9] focus:border-[#02b9a9] dark:bg-white dark:border-gray-100 dark:placeholder-gray-400 dark:text-black dark:focus:ring-[#02b9a9] dark:focus:border-[#02b9a9]"
+                            placeholder="Post a message..."></textarea>
+                        <button type="submit"
+                            class="inline-flex justify-center p-2 text-white bg-[#02bbab] rounded-xl ">
+                            <svg class="w-6 h-6 rotate-45 " fill="white" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</html>
+
+
+<!-- <div class="rounded bg-grey-light  p-2 pb-12">
+
+          <div class="text-sm mt-2 ml-2">
+            <div class="block  p-6 mr-10 bg-white rounded-lg border border-l-4 border-l-[#01b4a5] shadow-md mb-2">
+              <span class="entry-progress tag-pill completed float-right bg-[#d9f2f0] rounded-xl -mr-4 pl-2 pr-2 text-[#009084] ">100%</span>
+              <p class="mb-1  flex">
+                Onboarding <span><svg class="icon relative top-[8px] pl-2 " width="1.8em" height="1em" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M8 22c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zM52 22c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zM30 22c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8z" fill="currentColor"></path></svg></span></p>
+              <span>
+                <div class="entry-meta">
+                  <div class="meta-item">
+                    <div class="meta-item-icon"><svg class="icon mb-1" width="1em" height="1em" viewBox="0 0 14 15"
+                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.6 3.5c0-.387-.312-.7-.697-.7a.703.703 0 0 1-.703.7c-.387 0-.7-.31-.7-.7H9.1c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H6.3c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H3.5c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7-.388 0-.7.313-.7.7v1.4h11.2V3.5zM1.4 6.3v6.3c0 .387.312.7.697.7h9.806a.698.698 0 0 0 .697-.7V6.3H1.4zM14 3.5v9.1c0 1.16-.938 2.1-2.097 2.1H2.097A2.099 2.099 0 0 1 0 12.6V3.5c0-1.16.938-2.1 2.097-2.1L2.1.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7A2.1 2.1 0 0 1 14 3.5z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="meta-item-text"><time class="mb-2">May 27</time> - <time class="mb-2">May 29</time>&nbsp;(3 days)</div>
+                  </div>
+                  <div class="meta-item">
+                    <div class="meta-item-icon"><svg class="icon mb-1" width="0.8333333333333334em" height="1em"
+                        viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.833 0c.46 0 .834.37.834.833h1.666C14.253.833 15 1.577 15 2.5v13.333c0 .922-.744 1.667-1.667 1.667H1.667A1.666 1.666 0 0 1 0 15.833V2.5C0 1.579.744.833 1.667.833h1.666c0-.46.37-.833.834-.833.46 0 .833.37.833.833h1.667c0-.46.37-.833.833-.833.46 0 .833.37.833.833H10c0-.46.37-.833.833-.833zm-2.5 2.5c0 .46-.37.833-.833.833a.83.83 0 0 1-.833-.832A697.35 697.35 0 0 0 5 2.499c0 .462-.37.834-.833.834a.83.83 0 0 1-.834-.832C2.327 2.499 1.667 2.5 1.667 2.5v13.333h11.666V2.5h-1.666c0 .46-.37.833-.834.833A.83.83 0 0 1 10 2.501L8.333 2.5zM7.5 7.083c0-.46.376-.833.837-.833h3.326a.833.833 0 1 1 0 1.667H8.337a.833.833 0 0 1-.837-.834zm0 4.584c0-.46.376-.834.837-.834h3.326a.833.833 0 1 1 0 1.667H8.337a.833.833 0 0 1-.837-.833zM3.577 7.673l-.833-.834a.833.833 0 0 1 1.179-1.178l.244.244 1.077-1.078a.833.833 0 0 1 1.179 1.179L4.756 7.673a.833.833 0 0 1-1.179 0zm0 4.583l-.833-.833a.833.833 0 1 1 1.179-1.179l.245.246 1.076-1.08a.833.833 0 1 1 1.179 1.18l-1.667 1.666a.833.833 0 0 1-1.179 0z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="meta-item-text"><strong class="text-[#009084]">Add a Task...</strong></div>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <div class="block  p-6 mr-10 bg-white rounded-lg border border-l-4 border-l-[#01b4a5] shadow-md mb-2">
+              <span class="entry-progress tag-pill completed float-right bg-[#d9f2f0] rounded-xl -mr-4 pl-2 pr-2 text-[#009084]">100%</span>
+              <p>
+                Onboarding</p>
+              <span>
+                <div class="entry-meta">
+                  <div class="meta-item">
+                    <div class="meta-item-icon"><svg class="icon " width="1em" height="1em" viewBox="0 0 14 15"
+                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.6 3.5c0-.387-.312-.7-.697-.7a.703.703 0 0 1-.703.7c-.387 0-.7-.31-.7-.7H9.1c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H6.3c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H3.5c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7-.388 0-.7.313-.7.7v1.4h11.2V3.5zM1.4 6.3v6.3c0 .387.312.7.697.7h9.806a.698.698 0 0 0 .697-.7V6.3H1.4zM14 3.5v9.1c0 1.16-.938 2.1-2.097 2.1H2.097A2.099 2.099 0 0 1 0 12.6V3.5c0-1.16.938-2.1 2.097-2.1L2.1.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7A2.1 2.1 0 0 1 14 3.5z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="meta-item-text"><time>May 27</time> - <time>May 29</time>&nbsp;(3 days)</div>
+                  </div>
+                  <div class="meta-item">
+                    <div class="meta-item-icon"><svg class="icon " width="0.8333333333333334em" height="1em"
+                        viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.833 0c.46 0 .834.37.834.833h1.666C14.253.833 15 1.577 15 2.5v13.333c0 .922-.744 1.667-1.667 1.667H1.667A1.666 1.666 0 0 1 0 15.833V2.5C0 1.579.744.833 1.667.833h1.666c0-.46.37-.833.834-.833.46 0 .833.37.833.833h1.667c0-.46.37-.833.833-.833.46 0 .833.37.833.833H10c0-.46.37-.833.833-.833zm-2.5 2.5c0 .46-.37.833-.833.833a.83.83 0 0 1-.833-.832A697.35 697.35 0 0 0 5 2.499c0 .462-.37.834-.833.834a.83.83 0 0 1-.834-.832C2.327 2.499 1.667 2.5 1.667 2.5v13.333h11.666V2.5h-1.666c0 .46-.37.833-.834.833A.83.83 0 0 1 10 2.501L8.333 2.5zM7.5 7.083c0-.46.376-.833.837-.833h3.326a.833.833 0 1 1 0 1.667H8.337a.833.833 0 0 1-.837-.834zm0 4.584c0-.46.376-.834.837-.834h3.326a.833.833 0 1 1 0 1.667H8.337a.833.833 0 0 1-.837-.833zM3.577 7.673l-.833-.834a.833.833 0 0 1 1.179-1.178l.244.244 1.077-1.078a.833.833 0 0 1 1.179 1.179L4.756 7.673a.833.833 0 0 1-1.179 0zm0 4.583l-.833-.833a.833.833 0 1 1 1.179-1.179l.245.246 1.076-1.08a.833.833 0 1 1 1.179 1.18l-1.667 1.666a.833.833 0 0 1-1.179 0z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="meta-item-text"><strong class="text-[#009084]">Add a Task...</strong></div>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <div class="block  p-6 mr-10 bg-white rounded-lg border border-l-4 border-l-[#f79441] shadow-md mb-2">
+              <span class="entry-progress tag-pill completed float-right bg-[#d9f2f0] rounded-xl -mr-4 pl-2 pr-2 text-[#009084]">100%</span>
+              <p>
+                Onboarding</p>
+              <span>
+                <div class="entry-meta">
+                  <div class="meta-item">
+                    <div class="meta-item-icon"><svg class="icon " width="1em" height="1em" viewBox="0 0 14 15"
+                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.6 3.5c0-.387-.312-.7-.697-.7a.703.703 0 0 1-.703.7c-.387 0-.7-.31-.7-.7H9.1c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H6.3c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H3.5c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7-.388 0-.7.313-.7.7v1.4h11.2V3.5zM1.4 6.3v6.3c0 .387.312.7.697.7h9.806a.698.698 0 0 0 .697-.7V6.3H1.4zM14 3.5v9.1c0 1.16-.938 2.1-2.097 2.1H2.097A2.099 2.099 0 0 1 0 12.6V3.5c0-1.16.938-2.1 2.097-2.1L2.1.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7A2.1 2.1 0 0 1 14 3.5z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="meta-item-text"><time>May 27</time> - <time>May 29</time>&nbsp;(3 days)</div>
+                  </div>
+                  <div class="meta-item">
+                    <div class="meta-item-icon"><svg class="icon " width="0.8333333333333334em" height="1em"
+                        viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.833 0c.46 0 .834.37.834.833h1.666C14.253.833 15 1.577 15 2.5v13.333c0 .922-.744 1.667-1.667 1.667H1.667A1.666 1.666 0 0 1 0 15.833V2.5C0 1.579.744.833 1.667.833h1.666c0-.46.37-.833.834-.833.46 0 .833.37.833.833h1.667c0-.46.37-.833.833-.833.46 0 .833.37.833.833H10c0-.46.37-.833.833-.833zm-2.5 2.5c0 .46-.37.833-.833.833a.83.83 0 0 1-.833-.832A697.35 697.35 0 0 0 5 2.499c0 .462-.37.834-.833.834a.83.83 0 0 1-.834-.832C2.327 2.499 1.667 2.5 1.667 2.5v13.333h11.666V2.5h-1.666c0 .46-.37.833-.834.833A.83.83 0 0 1 10 2.501L8.333 2.5zM7.5 7.083c0-.46.376-.833.837-.833h3.326a.833.833 0 1 1 0 1.667H8.337a.833.833 0 0 1-.837-.834zm0 4.584c0-.46.376-.834.837-.834h3.326a.833.833 0 1 1 0 1.667H8.337a.833.833 0 0 1-.837-.833zM3.577 7.673l-.833-.834a.833.833 0 0 1 1.179-1.178l.244.244 1.077-1.078a.833.833 0 0 1 1.179 1.179L4.756 7.673a.833.833 0 0 1-1.179 0zm0 4.583l-.833-.833a.833.833 0 1 1 1.179-1.179l.245.246 1.076-1.08a.833.833 0 1 1 1.179 1.18l-1.667 1.666a.833.833 0 0 1-1.179 0z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="meta-item-text"><strong class="text-[#009084]">Add a Task...</strong></div>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <div class="block  p-6 mr-10 bg-white rounded-lg border border-l-4 border-l-[#f79441] shadow-md mb-2">
+              <span class="entry-progress tag-pill completed float-right bg-[#d9f2f0] rounded-xl -mr-4 pl-2 pr-2 text-[#009084]">100%</span>
+              <p>
+                Onboarding</p>
+              <span>
+                <div class="entry-meta">
+                  <div class="meta-item">
+                    <div class="meta-item-icon"><svg class="icon " width="1em" height="1em" viewBox="0 0 14 15"
+                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.6 3.5c0-.387-.312-.7-.697-.7a.703.703 0 0 1-.703.7c-.387 0-.7-.31-.7-.7H9.1c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H6.3c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H3.5c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7-.388 0-.7.313-.7.7v1.4h11.2V3.5zM1.4 6.3v6.3c0 .387.312.7.697.7h9.806a.698.698 0 0 0 .697-.7V6.3H1.4zM14 3.5v9.1c0 1.16-.938 2.1-2.097 2.1H2.097A2.099 2.099 0 0 1 0 12.6V3.5c0-1.16.938-2.1 2.097-2.1L2.1.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7A2.1 2.1 0 0 1 14 3.5z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="meta-item-text"><time>May 27</time> - <time>May 29</time>&nbsp;(3 days)</div>
+                  </div>
+                  <div class="meta-item">
+                    <div class="meta-item-icon"><svg class="icon " width="0.8333333333333334em" height="1em"
+                        viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.833 0c.46 0 .834.37.834.833h1.666C14.253.833 15 1.577 15 2.5v13.333c0 .922-.744 1.667-1.667 1.667H1.667A1.666 1.666 0 0 1 0 15.833V2.5C0 1.579.744.833 1.667.833h1.666c0-.46.37-.833.834-.833.46 0 .833.37.833.833h1.667c0-.46.37-.833.833-.833.46 0 .833.37.833.833H10c0-.46.37-.833.833-.833zm-2.5 2.5c0 .46-.37.833-.833.833a.83.83 0 0 1-.833-.832A697.35 697.35 0 0 0 5 2.499c0 .462-.37.834-.833.834a.83.83 0 0 1-.834-.832C2.327 2.499 1.667 2.5 1.667 2.5v13.333h11.666V2.5h-1.666c0 .46-.37.833-.834.833A.83.83 0 0 1 10 2.501L8.333 2.5zM7.5 7.083c0-.46.376-.833.837-.833h3.326a.833.833 0 1 1 0 1.667H8.337a.833.833 0 0 1-.837-.834zm0 4.584c0-.46.376-.834.837-.834h3.326a.833.833 0 1 1 0 1.667H8.337a.833.833 0 0 1-.837-.833zM3.577 7.673l-.833-.834a.833.833 0 0 1 1.179-1.178l.244.244 1.077-1.078a.833.833 0 0 1 1.179 1.179L4.756 7.673a.833.833 0 0 1-1.179 0zm0 4.583l-.833-.833a.833.833 0 1 1 1.179-1.179l.245.246 1.076-1.08a.833.833 0 1 1 1.179 1.18l-1.667 1.666a.833.833 0 0 1-1.179 0z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="meta-item-text"><strong class="text-[#009084]">Add a Task...</strong></div>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <div class="block  p-6 mr-10 bg-white rounded-lg border border-l-4 border-l-[#f79441] shadow-md mb-2">
+              <span class="entry-progress tag-pill completed float-right bg-[#d9f2f0] rounded-xl -mr-4 pl-2 pr-2 text-[#009084]">100%</span>
+              <p>
+                Onboarding</p>
+              <span>
+                <div class="entry-meta">
+                  <div class="meta-item">
+                    <div class="meta-item-icon"><svg class="icon " width="1em" height="1em" viewBox="0 0 14 15"
+                        version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M12.6 3.5c0-.387-.312-.7-.697-.7a.703.703 0 0 1-.703.7c-.387 0-.7-.31-.7-.7H9.1c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H6.3c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7H3.5c0 .387-.31.7-.7.7-.387 0-.7-.31-.7-.7-.388 0-.7.313-.7.7v1.4h11.2V3.5zM1.4 6.3v6.3c0 .387.312.7.697.7h9.806a.698.698 0 0 0 .697-.7V6.3H1.4zM14 3.5v9.1c0 1.16-.938 2.1-2.097 2.1H2.097A2.099 2.099 0 0 1 0 12.6V3.5c0-1.16.938-2.1 2.097-2.1L2.1.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7h1.4V.7c0-.387.31-.7.7-.7.387 0 .7.31.7.7v.7A2.1 2.1 0 0 1 14 3.5z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="meta-item-text"><time>May 27</time> - <time>May 29</time>&nbsp;(3 days)</div>
+                  </div>
+                  <div class="meta-item">
+                    <div class="meta-item-icon"><svg class="icon " width="0.8333333333333334em" height="1em"
+                        viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10.833 0c.46 0 .834.37.834.833h1.666C14.253.833 15 1.577 15 2.5v13.333c0 .922-.744 1.667-1.667 1.667H1.667A1.666 1.666 0 0 1 0 15.833V2.5C0 1.579.744.833 1.667.833h1.666c0-.46.37-.833.834-.833.46 0 .833.37.833.833h1.667c0-.46.37-.833.833-.833.46 0 .833.37.833.833H10c0-.46.37-.833.833-.833zm-2.5 2.5c0 .46-.37.833-.833.833a.83.83 0 0 1-.833-.832A697.35 697.35 0 0 0 5 2.499c0 .462-.37.834-.833.834a.83.83 0 0 1-.834-.832C2.327 2.499 1.667 2.5 1.667 2.5v13.333h11.666V2.5h-1.666c0 .46-.37.833-.834.833A.83.83 0 0 1 10 2.501L8.333 2.5zM7.5 7.083c0-.46.376-.833.837-.833h3.326a.833.833 0 1 1 0 1.667H8.337a.833.833 0 0 1-.837-.834zm0 4.584c0-.46.376-.834.837-.834h3.326a.833.833 0 1 1 0 1.667H8.337a.833.833 0 0 1-.837-.833zM3.577 7.673l-.833-.834a.833.833 0 0 1 1.179-1.178l.244.244 1.077-1.078a.833.833 0 0 1 1.179 1.179L4.756 7.673a.833.833 0 0 1-1.179 0zm0 4.583l-.833-.833a.833.833 0 1 1 1.179-1.179l.245.246 1.076-1.08a.833.833 0 1 1 1.179 1.18l-1.667 1.666a.833.833 0 0 1-1.179 0z"
+                          fill="currentColor" fill-rule="evenodd"></path>
+                      </svg></div>
+                    <div class="meta-item-text"><strong class="text-[#009084]">Add a Task...</strong></div>
+                  </div>
+                </div>
+              </span>
+            </div>
+            <p class="block  p-6 mr-10 bg-white rounded-lg border border-l-4 border-l-[#01b4a5] shadow-md mb-2">
+              Welcome everyone! 👋 This is how we’ll collaborate together in Nifty.
+              We can add project brief, resource links, and other important information here. 🚀</p>
+          </div>
+        </div> -->
