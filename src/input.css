@@ -84,25 +84,17 @@ body {
   display: block;
   z-index: 999;
 }
-<<<<<<< HEAD
-/* #sidebar {
-  height: calc(100vh);
-=======
 
 /* #sidebar {
   height: calc(100vh - 48px);
->>>>>>> 971388c9dca3f124bd1fd02950d1de8977d9e00d
   position: fixed;
 } */
 .screen_pop li a:hover span {
   color: #000;
 }
 .screen_pop li a span {
-<<<<<<< HEAD
-  color: #8E94BB;
-=======
   color: #8e94bb;
->>>>>>> 971388c9dca3f124bd1fd02950d1de8977d9e00d
+  color: #8e94bb;
 }
 .screen_pop li a span.text-color {
   color: #393939;
