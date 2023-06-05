@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>profile-notify-setting</title>
 </head>
 
 <body>
@@ -860,45 +860,16 @@
             <div class="w-full h-[100vh]">
                 <div class="group relative">
                     <button
-                        class="self-left text-[20px] font-bold whitespace-nowrap dark:text-[#4c4c4c] px-7 flex">M.Ibrahim:
-                        My Workspace
+                        class="self-left text-[20px] font-bold  dark:text-[#4c4c4c] px-8 py-4 flex">Notification Settings
 
                     </button>
 
                 </div>
-                <div class=" ml-7 mt-2" id=" ">
-                    <ul
-                        class="flex flex-col mt-2 font-medium  border rounded-lg bg-transparent md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 dark:border-gray-700 space-x-4">
-                        <li class="">
-                            <a href="#"
-                                class=" text-[#4c4c4c] bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0">Invite
-                                People</a>
-
-                        <li class="">
-                            <a href="#"
-                                class=" text-[#4c4c4c] bg-transparent md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 "
-                                href="#"> Manage Members (1)</a>
-                        </li>
-                        <li class="">
-                            <a href="#"
-                                class=" text-[#4c4c4c] bg-transparent  md:dark:hover:text-[#00a99b] hover:border-b hover:border-[#00a99b] hover:pb-0 pl-2"
-                                href="#">Custom Roles & Permissions</a>
-                        </li>
-
-
-                        </li>
-                    </ul>
-                </div>
+            
                 <hr>
                 <div>
-                    <div class="float-right mr-6 mt-4 text-white"><button
-                            class=" border rounded-lg flex bg-[#00ac9e]  gap-1 p-2 mr-2"><svg
-                                class="icon relative top-1" width="14px" height="14px" viewBox="0 0 12 12" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6.66667 0.666569C6.66667 0.296631 6.36819 0 6 0C5.62924 0 5.33333 0.298433 5.33333 0.666569V5.33333H0.666569C0.296631 5.33333 0 5.63181 0 6C0 6.37076 0.298433 6.66667 0.666569 6.66667H5.33333V11.3334C5.33333 11.7034 5.63181 12 6 12C6.37076 12 6.66667 11.7016 6.66667 11.3334V6.66667H11.3334C11.7034 6.66667 12 6.36819 12 6C12 5.62924 11.7016 5.33333 11.3334 5.33333H6.66667V0.666569Z"
-                                    fill="currentColor"></path>
-                            </svg> Add Custom Role</button></div>
+                    <div class="float-left ml-12 mt-4 text-white text-[13px] font-semibold"><button
+                            class=" border rounded-lg flex bg-white text-[#009084] shadow-sm gap-1 p-2 mr-2">(icon) Enable browser  <span>notifications</span></button></div>
                 </div>
 
                 <div>
@@ -907,33 +878,20 @@
                             <div>
                                 <table class="w-full customroll_table">
                                     <thead>
-                                        <tr class="text-[16px] font-semibold  text-left text-[#2f324f] ">
-                                            <th class="ml-5 ">Access </th>
-                                            <th class="text-[14px] pt-8 font-medium px-6  py-2">Owner</th>
-                                            <th class="text-[14px] pt-8 font-medium px-6  py-2">Admin</th>
-                                            <th class="text-[14px] pt-8 font-medium px-6  py-2">Member</th>
-                                            <th class="text-[14px] pt-8 font-medium px-6  py-2">Guest</th>
+                                        <tr class="font-semibold  text-left text-[#2f324f] ">
+                                            <th class="ml-8 ">Workspace / Project Notifications </th>
+                                            
+                                            <th class="text-[14px] pb-4 pt-8 font-medium px-6  py-2">BROWSER</th>
+                                            <th class="text-[14px] pb-4 pt-8 font-medium px-6  py-2">MOBILE</th>
+                                            <th class="text-[14px] pb-4 pt-8 font-medium px-6  py-2">EMAIL</th>
                                         </tr>
                                     </thead>
 
 
-                                    <div class="">
+                                    <div class="mb-6">
                                         <tbody class="border">
                                             <tr class="">
-                                                <td class="bg-white px-5  border">Overviews Access <div
-                                                        class="group cursor-pointer relative inline-block border-gray-400 w-12 text-center">
-                                                        (icon)
-                                                        <div
-                                                            class="opacity-0 w-28 bg-slate-300 text-black text-center text-xs shadow-2xl rounded-lg py-2 absolute z-10 group-hover:opacity-100 bottom-full -left-1/2  px-3 pointer-events-none">
-                                                            Tooltip center
-                                                            <svg class="absolute text-black h-2 w-full left-0 top-full"
-                                                                x="0px" y="0px" viewBox="0 0 255 255"
-                                                                xml:space="preserve">
-                                                                <polygon class="fill-current"
-                                                                    points="0,0 127.5,127.5 255,0" />
-                                                            </svg>
-                                                        </div>
-                                                    </div>
+                                                <td class="bg-white px-5 py-4 border ">When a user joins my Workspace 
                                                 </td>
                                                 <td class="bg-[#fafbfd] px-6  py-2">
                                                     <div>
@@ -953,42 +911,18 @@
                                                             class="sr-only">checkbox</label>
                                                     </div>
                                                 </td>
-                                                <td class="bg-[#fafbfd] px-6 py-2">
+                                                
+                                                <td class="bg-[#fafbfd] text-[#9ca2c2] px-6 py-2">
                                                     <div>
 
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="bg-[#fafbfd] px-6 py-2">
-                                                    <div>
-
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
+                                                        <p>N/A</p>
                                                     </div>
                                                 </td>
                                             </tr>
 
 
                                             <tr class="border">
-                                                <td class=" w-full bg-white px-5 border">Workloads Access <div
-                                                    class="group cursor-pointer relative inline-block border-gray-400 w-12 text-center">
-                                                    (icon)
-                                                    <div
-                                                        class="opacity-0 w-28 bg-slate-300 text-black text-center text-xs shadow-2xl rounded-lg py-2 absolute z-10 group-hover:opacity-100 bottom-full -left-1/2  px-3 pointer-events-none">
-                                                        Tooltip center
-                                                        <svg class="absolute text-black h-2 w-full left-0 top-full"
-                                                            x="0px" y="0px" viewBox="0 0 255 255"
-                                                            xml:space="preserve">
-                                                            <polygon class="fill-current"
-                                                                points="0,0 127.5,127.5 255,0" />
-                                                        </svg>
-                                                    </div>
-                                                </div></td>
+                                                <td class=" w-full bg-white px-5 py-4 border">When I’m invited to a new workspace </td>
                                                 <td class="bg-[#fafbfd] px-6 py-2">
                                                     <div>
 
@@ -1007,16 +941,8 @@
                                                             class="sr-only">checkbox</label>
                                                     </div>
                                                 </td>
-                                                <td class="bg-[#fafbfd] px-6 py-2">
-                                                    <div>
-
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="bg-[#fafbfd] px-6 py-2">
+                                                
+                                                <td class="bg-[#fafbfd] px-6  py-2">
                                                     <div>
 
                                                         <input id="checkbox-all-search" type="checkbox"
@@ -1029,7 +955,39 @@
 
 
                                             <tr class="border rounded-lg">
-                                                <td class=" w-full bg-white px-5  border">View Email Addresses <div
+                                                <td class=" w-full bg-white px-5 py-4  border">When I’m invited into a new Project</td>
+                                                <td class="bg-[#fafbfd] px-6 py-2">
+                                                    <div>
+
+                                                        <input id="checkbox-all-search" type="checkbox"
+                                                            class="accent-[#7dd3cd] w-4 h-4 ">
+                                                        <label for="checkbox-all-search"
+                                                            class="sr-only">checkbox</label>
+                                                    </div>
+                                                </td>
+                                               
+                                                <td class="bg-[#fafbfd] px-6 py-2 ">
+                                                    <div>
+
+                                                        <input id="checkbox-all-search" type="checkbox"
+                                                            class="accent-[#7dd3cd] w-4 h-4 ">
+                                                        <label for="checkbox-all-search"
+                                                            class="sr-only">checkbox</label>
+                                                    </div>
+                                                </td>
+                                                <td class="bg-[#fafbfd] px-6  py-2">
+                                                    <div>
+
+                                                        <input id="checkbox-all-search" type="checkbox"
+                                                            class="accent-[#7dd3cd] w-4 h-4 ">
+                                                        <label for="checkbox-all-search"
+                                                            class="sr-only">checkbox</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="border rounded-lg">
+                                                <td class=" w-full bg-white px-5  py-4 border">Weekly Productivity Reports (sent every Monday)s<div
                                                     class="group cursor-pointer relative inline-block border-gray-400 w-12 text-center">
                                                     (icon)
                                                     <div
@@ -1043,34 +1001,20 @@
                                                         </svg>
                                                     </div>
                                                 </div></td>
-                                                <td class="bg-[#fafbfd] px-6 py-2">
+                                                <td class="bg-[#fafbfd] text-[#9ca2c2] px-6 py-2">
                                                     <div>
 
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
+                                                        <p>N/A</p>
                                                     </div>
                                                 </td>
-                                                <td class="bg-[#fafbfd] px-6 py-2">
+                                               
+                                                <td class="bg-[#fafbfd] text-[#9ca2c2] px-6 py-2">
                                                     <div>
 
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
+                                                        <p>N/A</p>
                                                     </div>
                                                 </td>
-                                                <td class="bg-[#fafbfd] px-6 py-2 ">
-                                                    <div>
-
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                </td>
-                                                <td class="bg-[#fafbfd] px-6 py-2">
+                                                <td class="bg-[#fafbfd] px-6  py-2">
                                                     <div>
 
                                                         <input id="checkbox-all-search" type="checkbox"
@@ -1080,9 +1024,6 @@
                                                     </div>
                                                 </td>
                                             </tr>
-
-
-
                                         </tbody>
                                     </div>
 
@@ -1090,17 +1031,16 @@
 
                                         <table class="w-full customroll_table">
                                             <thead>
-                                                <tr class="text-[16px] font-semibold  text-left text-[#2f324f] ">
-                                                    <th class="ml-5 pt-7">Workspace</th>
-                                                    <th class="text-[14px] pb-4 pt-8 font-medium px-6  py-2">Owner</th>
-                                                    <th class="text-[14px] pb-4 pt-8 font-medium px-6  py-2">Admin</th>
-                                                    <th class="text-[14px] pb-4 pt-8 font-medium px-6  py-2">Member</th>
-                                                    <th class="text-[14px] pb-4 pt-8 font-medium px-6  py-2">Guest</th>
+                                                <tr class="text-[16px] font-semibold  text-left text-[#2f324f]">
+                                                    <th class="ml-5 pt-8">Discussion / Workspace Chat Notifications</th>
+                                                    <th class="text-[14px] pb-4 pt-8 font-medium px-6  py-2">BROWSER</th>
+                                            <th class="text-[14px] pb-4 pt-8 font-medium px-6  py-2">MOBILE</th>
+                                            <th class="text-[14px] pb-4 pt-8 font-medium px-6  py-2">EMAIL</th>
                                                 </tr>
                                             </thead>
                                             <tbody class="border rounded-lg">
                                                 <tr class="">
-                                                    <td class=" w-full bg-white px-5  border">Manage Workspace Settings <div
+                                                    <td class=" w-full bg-white px-5 py-4  border">When I’m tagged in a Discussion <div
                                                         class="group cursor-pointer relative inline-block border-gray-400 w-12 text-center">
                                                         (icon)
                                                         <div
@@ -1133,29 +1073,18 @@
                                                                 class="sr-only">checkbox</label>
                                                         </div>
                                                     </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
+                                                    <td class="bg-[#fafbfd] text-[#9ca2c2] px-6 py-2">
                                                         <div>
 
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
+                                                            <p>N/A</p>
                                                         </div>
                                                     </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
-                                                        <div>
-
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </td>
+                                                    
                                                 </tr>
 
 
                                                 <tr class="border rounded-lg">
-                                                    <td class=" w-full bg-white px-5 border">Invite users to Workspace <div
+                                                    <td class=" w-full bg-white px-5 py-4 border">When there’s a New Message in a Discussion <div
                                                         class="group cursor-pointer relative inline-block border-gray-400 w-12 text-center">
                                                         (icon)
                                                         <div
@@ -1188,29 +1117,17 @@
                                                                 class="sr-only">checkbox</label>
                                                         </div>
                                                     </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
+                                                    <td class="bg-[#fafbfd] text-[#9ca2c2] px-6 py-2">
                                                         <div>
 
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
-                                                        <div>
-
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
+                                                            <p>N/A</p>
                                                         </div>
                                                     </td>
                                                 </tr>
 
 
                                                 <tr class="border rounded-lg">
-                                                    <td class=" w-full bg-white px-5 border">Remove users from Workspace <div
+                                                    <td class=" w-full bg-white px-5 py-4 border">When there's a new file uploaded in Discussion <div
                                                         class="group cursor-pointer relative inline-block border-gray-400 w-12 text-center">
                                                         (icon)
                                                         <div
@@ -1243,29 +1160,17 @@
                                                                 class="sr-only">checkbox</label>
                                                         </div>
                                                     </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
+                                                    <td class="bg-[#fafbfd] text-[#9ca2c2] px-6 py-2">
                                                         <div>
 
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
-                                                        <div>
-
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
+                                                            <p>N/A</p>
                                                         </div>
                                                     </td>
                                                 </tr>
 
 
                                                 <tr class="border rounded-lg">
-                                                    <td class=" w-full bg-white px-5 border">View Workspace Guests <div
+                                                    <td class=" w-full bg-white px-5 py-4 border">When I’m tagged in a Thread <div
                                                         class="group cursor-pointer relative inline-block border-gray-400 w-12 text-center">
                                                         (icon)
                                                         <div
@@ -1297,29 +1202,17 @@
                                                                 class="sr-only">checkbox</label>
                                                         </div>
                                                     </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
+                                                    <td class="bg-[#fafbfd] text-[#9ca2c2] px-6 py-2">
                                                         <div>
 
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
-                                                        <div>
-
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
+                                                            <p>N/A</p>
                                                         </div>
                                                     </td>
                                                 </tr>
 
 
                                                 <tr class="border rounded-lg">
-                                                    <td class=" w-full bg-white px-5  border">View Workspace Settings <div
+                                                    <td class=" w-full bg-white px-5  py-4 border">When there’s a New Message in a Thread<div
                                                         class="group cursor-pointer relative inline-block border-gray-400 w-12 text-center">
                                                         (icon)
                                                         <div
@@ -1352,29 +1245,17 @@
                                                                 class="sr-only">checkbox</label>
                                                         </div>
                                                     </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
+                                                    <td class="bg-[#fafbfd] text-[#9ca2c2] px-6 py-2">
                                                         <div>
 
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
-                                                        <div>
-
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
+                                                            <p>N/A</p>
                                                         </div>
                                                     </td>
                                                 </tr>
 
 
                                                 <tr class="border rounded-lg">
-                                                    <td class=" w-full bg-white px-5 border">Leave Workspace <div
+                                                    <td class=" w-full bg-white px-5 py-4 border">When I have Unread Messages (checked every 60 minutes) <div
                                                         class="group cursor-pointer relative inline-block border-gray-400 w-12 text-center">
                                                         (icon)
                                                         <div
@@ -1406,24 +1287,13 @@
                                                                 class="sr-only">checkbox</label>
                                                         </div>
                                                     </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
+                                                    <td class="bg-[#fafbfd] text-[#9ca2c2] px-6 py-2">
                                                         <div>
 
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
+                                                            <p>N/A</p>
                                                         </div>
                                                     </td>
-                                                    <td class="bg-[#fafbfd] px-6 py-2">
-                                                        <div>
-
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="accent-[#7dd3cd] w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </td>
+                                                   
                                                 </tr>
 
                                             </tbody>
@@ -1431,934 +1301,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    <!-- <th class="px-4 py-3 flex justify-between">Access <div
-                                                        class="flex gap-14 text-[12px]">
-                                                        <h3>OWNER</h3>
-                                                        <h3>ADMIN</h3>
-                                                        <h3>MEMBER</h3>
-                                                        <h3>GUEST</h3>
-                                                    </div>
-                                            </div>
-                                            </th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody class="bg-white">
-                                        <tr class="text-gray-700">
-                                            <div class="">
-                                                <td class="px-4 py-3  border  rounded-lg ">
-                                                    <div class="flex justify-between ">
-                                                        <div>
-                                                            <p class=" text-black">Overviews Access</p>
-                                                        </div>
-                                                        <div class="flex gap-8 space-x-14">
-
-                                                            <div>
-
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <hr>
-
-                                                    <div class="flex justify-between mt-3">
-                                                        <div>
-                                                            <p class=" text-black">Workloads Access</p>
-                                                        </div>
-                                                        <div class="flex gap-8 space-x-14">
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <hr>
-                                                    <div class="flex justify-between mt-3">
-                                                        <div>
-                                                            <p class=" text-black">View Email Addresses</p>
-                                                        </div>
-                                                        <div class="flex gap-8 space-x-14">
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search"
-                                                                    class="sr-only">checkbox</label>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-
-
-                                                </td>
-                                            </div>
-
-
-                                        </tr>
-                                    </tbody>
-
-                                </table>
-
-                                <table class="w-full ">
-                                    <thead>
-                                        <tr class="text-md font-semibold  text-left text-gray-900 ">
-                                            <div class="">
-                                                <th class="px-4 py-3 mt-4 flex justify-between">Workspace <div
-                                                        class="flex gap-14 text-[12px]">
-                                                        <h3>OWNER</h3>
-                                                        <h3>ADMIN</h3>
-                                                        <h3>MEMBER</h3>
-                                                        <h3>GUEST</h3>
-                                                    </div>
-                                            </div>
-                                            </th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody class="bg-white">
-                                        <tr class="text-gray-700">
-                                            <div class="">
-                                                <td class="px-4 py-3  border  rounded-lg ">
-                                                    <div class="flex justify-between">
-                                                        <div>
-                                                            <p class=" text-black">Manage Workspace Settings</p>
-
-                                                        </div>
-                                                        <div class="flex gap-8 space-x-14">
-
-                                                            <div>
-
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search" class="sr-only">Manage
-                                                                    Workspace Settings</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search" class="sr-only">Invite
-                                                                    users to Workspace</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search" class="sr-only">Remove
-                                                                    users from Workspace</label>
-                                                            </div>
-                                                            <div>
-                                                                <input id="checkbox-all-search" type="checkbox"
-                                                                    class="accent-[#7dd3cd] w-4 h-4 ">
-                                                                <label for="checkbox-all-search" class="sr-only">View
-                                                                    Workspace Guests</label>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                            </div>
-                                            <hr>
-                                            <div class="flex justify-between mt-3">
-                                                <div>
-                                                    <p class=" text-black">Invite users to Workspace</p>
-                                                </div>
-                                                <div class="flex gap-8 space-x-14">
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <hr>
-                                            <div class="flex justify-between mt-3">
-                                                <div>
-                                                    <p class=" text-black">Remove users from Workspace</p>
-                                                </div>
-                                                <div class="flex gap-8 space-x-14">
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <hr>
-                                            <div class="flex justify-between mt-3">
-                                                <div>
-                                                    <p class=" text-black">Invite users to Workspace</p>
-                                                </div>
-                                                <div class="flex gap-8 space-x-14">
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <hr>
-                                            <div class="flex justify-between mt-3">
-                                                <div>
-                                                    <p class=" text-black">View Workspace Guests</p>
-                                                </div>
-                                                <div class="flex gap-8 space-x-14">
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <hr>
-                                            <div class="flex justify-between mt-3">
-                                                <div>
-                                                    <p class=" text-black">Leave Workspace</p>
-                                                </div>
-                                                <div class="flex gap-8 space-x-14">
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="checkbox-all-search" type="checkbox"
-                                                            class="accent-[#7dd3cd] w-4 h-4 ">
-                                                        <label for="checkbox-all-search"
-                                                            class="sr-only">checkbox</label>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            </td>
-                            </div>
-                            </tr>
-                            </tbody>
-
-
-
-
-
-
-                            </table>
-
-                            <table class="w-full ">
-                                <thead>
-                                    <tr class="text-md font-semibold  text-left text-gray-900 ">
-                                        <div class="">
-                                            <th class="px-4 py-3 flex justify-between">User <div
-                                                    class="flex gap-14 text-[12px]">
-                                                    <h3>OWNER</h3>
-                                                    <h3>ADMIN</h3>
-                                                    <h3>MEMBER</h3>
-                                                    <h3>GUEST</h3>
-                                                </div>
-                                        </div>
-                                        </th>
-
-                                    </tr>
-                                </thead>
-                                <tbody class="bg-white">
-                                    <tr class="text-gray-700">
-                                        <div class="">
-                                            <td class="px-4 py-3  border  rounded-lg ">
-
-
-                                                <div class="flex justify-between ">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <hr>
-                                                <div class="flex justify-between mt-3">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <hr>
-                                                <div class="flex justify-between mt-3">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-
-
-
-
-                                            </td>
-                                        </div>
-
-
-                                    </tr>
-                                </tbody>
-
-
-
-
-
-                            </table>
-
-                            <table class="w-full ">
-                                <thead>
-                                    <tr class="text-md font-semibold  text-left text-gray-900 ">
-                                        <div class="">
-                                            <th class="px-4 py-3 flex justify-between">User <div
-                                                    class="flex gap-14 text-[12px]">
-                                                    <h3>OWNER</h3>
-                                                    <h3>ADMIN</h3>
-                                                    <h3>MEMBER</h3>
-                                                    <h3>GUEST</h3>
-                                                </div>
-                                        </div>
-                                        </th>
-
-                                    </tr>
-                                </thead>
-                                <tbody class="bg-white">
-                                    <tr class="text-gray-700">
-                                        <div class="">
-                                            <td class="px-4 py-3  border  rounded-lg ">
-
-
-                                                <div class="flex justify-between ">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <hr>
-                                                <div class="flex justify-between mt-3">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <hr>
-                                                <div class="flex justify-between mt-3">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-
-
-
-
-                                            </td>
-                                        </div>
-
-
-                                    </tr>
-                                </tbody>
-
-
-
-
-
-                            </table>
-
-                            <table class="w-full ">
-                                <thead>
-                                    <tr class="text-md font-semibold  text-left text-gray-900 ">
-                                        <div class="">
-                                            <th class="px-4 py-3 flex justify-between">Portfolio <div
-                                                    class="flex gap-14 text-[12px]">
-                                                    <h3>OWNER</h3>
-                                                    <h3>ADMIN</h3>
-                                                    <h3>MEMBER</h3>
-                                                    <h3>GUEST</h3>
-                                                </div>
-                                        </div>
-                                        </th>
-
-                                    </tr>
-                                </thead>
-                                <tbody class="bg-white">
-                                    <tr class="text-gray-700">
-                                        <div class="">
-                                            <td class="px-4 py-3  border  rounded-lg ">
-
-
-                                                <div class="flex justify-between ">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <hr>
-                                                <div class="flex justify-between mt-3">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <hr>
-                                                <div class="flex justify-between mt-3">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-
-
-
-
-                                            </td>
-                                        </div>
-
-
-                                    </tr>
-                                </tbody>
-
-
-
-
-
-                            </table>
-
-                            <table class="w-full ">
-                                <thead>
-                                    <tr class="text-md font-semibold  text-left text-gray-900 ">
-                                        <div class="">
-                                            <th class="px-4 py-3 flex justify-between">Project <div
-                                                    class="flex gap-14 text-[12px]">
-                                                    <h3>OWNER</h3>
-                                                    <h3>ADMIN</h3>
-                                                    <h3>MEMBER</h3>
-                                                    <h3>GUEST</h3>
-                                                </div>
-                                        </div>
-                                        </th>
-
-                                    </tr>
-                                </thead>
-                                <tbody class="bg-white">
-                                    <tr class="text-gray-700">
-                                        <div class="">
-                                            <td class="px-4 py-3  border  rounded-lg ">
-
-
-                                                <div class="flex justify-between ">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <hr>
-                                                <div class="flex justify-between mt-3">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <hr>
-                                                <div class="flex justify-between mt-3">
-                                                    <div>
-                                                        <p class=" text-black">View Email Addresses</p>
-                                                    </div>
-                                                    <div class="flex gap-8 space-x-14">
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 rounded  ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4   ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                        <div>
-                                                            <input id="checkbox-all-search" type="checkbox"
-                                                                class="w-4 h-4 ">
-                                                            <label for="checkbox-all-search"
-                                                                class="sr-only">checkbox</label>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-
-                                           </td>
-                                        </div>
-
-
-                                    </tr> -->
